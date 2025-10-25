@@ -1,0 +1,147 @@
+Centrum Optimi Website requirements
+
+Client: Centrum Optimi Educational Foundation (NGO)
+Domain: centrumoptimiedufoundation.org
+Prepared by: Temidayo Onifade 
+Date: 24/10/2025
+
+1. 📘 Project Overview
+What is Centrum Optimi Educational Foundation?
+Answer: Centrum Optimi is a Latin term meaning “ Centre of Excellence”. The goal of the foundation is to help individuals achieve their highest potential through education. By offering resources and opportunities for formal and non-formal education, Centrum Optimi Educational Foundation aims to promote personal excellence, allowing individuals to shine as stars in their worlds. 
+The purpose of this document is to clarify requirements, capture client expectations, and define the key features, pages, and functionalities for the website.
+
+2. 🎯 Objectives
+To create a visually appealing and mobile-responsive website for Centrum Optimi Edu Foundation.
+
+
+To provide a content management system (CMS) for administrators to update site content easily.
+
+
+To showcase the organization’s projects, programs, impact, and team.
+
+
+To provide an online donation and volunteer sign-up system.
+
+
+To create trust and visibility for donors, partners, and the general public.
+
+
+
+3. 💬 Client Discovery Questions
+🔹 About the Organization
+Please describe what your foundation does in one sentence.
+Unlocking individual excellence through access to quality education ( formal and non-formal) to build a society where excellence is a shared reality for all.                                                                                              
+What is your mission and vision statement?
+Mission : To bridge the educational gap that exists among the underprivileged and in rural communities. 
+Vision:  We believe there is excellence in every individual, and this excellence can  be nurtured and expressed through access to quality education, hands-on learning and skill development, leading to a progressive and healthy society.  
+Who are your target audiences? (e.g., students, donors, partners, volunteers) 
+All of the above
+What tone or image should the website project? (e.g., formal, compassionate, professional, youthful)
+Formal, compassionate, youthful
+
+
+Do you already have a logo, color palette, and branding guidelines?
+Yes. The brand colour is gold. 
+
+
+🔹 Website Goals
+What are the main purposes of your website? (e.g., awareness, donations, volunteer recruitment, project showcase)
+All of the above
+Do you want the site to include donation processing (e.g., Paystack, Flutterwave, or PayPal)?
+Yes 
+Should users be able to register or sign up (e.g., volunteers, partners)?
+Yes
+Would you like to include blog or news updates for ongoing activities?
+Yes
+Do you want the site to be multilingual (e.g., English and local languages)?
+No, English is fine. 
+🔹 Content and Media
+Do you have content ready for the site (texts, photos, videos)?
+Not yet
+Should the site include photo or video galleries?
+Not sure . I think the projects page/news update  should suffice for this
+Would you like a newsletter subscription section?
+
+
+
+🔹 Admin and Management
+How many administrators should have access to the backend?
+
+
+What content should the admin be able to manage? (e.g., pages, blog posts, donations, team, gallery)
+
+
+Should there be different admin roles (e.g., super admin, content editor)?
+
+
+Would you like an analytics dashboard to track visitors and donations? 
+
+
+🔹 Technical and Integration
+Do you have a preferred platform or should we use Laravel + Blade CMS? Yes
+
+
+Do you have hosting and domain already configured? Yes
+Should we integrate email notifications for donations, volunteer forms, or contact messages?
+Yes 
+Do you require SEO optimization and Google Analytics setup?
+
+
+Should we integrate social media feeds (Instagram, Facebook, X/Twitter)? 
+Yes 
+
+4. 🧱 Proposed Website Structure
+🔸 Public Pages
+Home – Overview, hero section, featured causes, and latest news.
+
+
+About Us – Mission, vision, history, and leadership.
+
+
+Our Programs / Projects – Details of ongoing and past initiatives.
+
+
+Get Involved – Volunteer form, partnership info, and donation call-to-action.
+
+
+Donate – Secure online donation system with Paystack/Flutterwave.
+
+
+Gallery – Photos and videos from events (added from admin).
+
+
+News / Blog – Articles, updates, and announcements.
+
+
+Contact Us – Address, map, contact form, and email.
+
+
+FAQs / Testimonials (optional) – Optional pages to build trust and transparency.
+
+
+
+5. 🧑‍💻 Admin Panel Features
+Feature
+Description
+Dashboard
+Overview of site activities (donations, new messages, volunteers).
+Manage Pages
+Create, edit, and publish static pages.
+Programs/Projects Manager
+Add, update, or remove programs and impact stories.
+Donation Management
+View donation records and donor details.
+Volunteer Applications
+View, approve, or contact volunteers.
+Media Library
+Upload and manage images/videos for gallery or pages.
+News/Blog Manager
+Post and edit articles.
+User Management
+Manage admin accounts and roles.
+Contact Form Submissions
+View messages from website visitors.
+Analytics & Reports
+Show site visits, donations summary, etc.
+
+
