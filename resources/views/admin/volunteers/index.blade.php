@@ -97,7 +97,7 @@
                 @forelse($volunteers as $volunteer)
                 <tr class="hover:bg-gray-50 transition-colors">
                     <td class="px-6 py-4">
-                        <div class="text-sm font-medium text-gray-900">{{ $volunteer->name }}</div>
+                        <div class="text-sm font-medium text-gray-900">{{ $volunteer->first_name }} {{ $volunteer->last_name }}</div>
                     </td>
                     <td class="px-6 py-4">
                         <div>

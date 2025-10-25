@@ -26,9 +26,9 @@
             <div class="bg-white rounded-xl shadow-lg overflow-hidden transition-transform duration-300 hover:scale-105">
                 <!-- Program Image -->
                 <div class="relative h-64 overflow-hidden">
-                    @if($program->image)
-                    <img src="{{ asset('storage/' . $program->image) }}" 
-                         alt="{{ $program->name }}" 
+                    @if($program->featured_image)
+                    <img src="{{ asset('storage/' . $program->featured_image) }}" 
+                         alt="{{ $program->title }}" 
                          class="w-full h-full object-cover">
                     @else
                     <div class="w-full h-full bg-gradient-to-br from-gold-200 to-gold-400 flex items-center justify-center">
@@ -49,7 +49,7 @@
                 <!-- Program Content -->
                 <div class="p-6">
                     <h3 class="text-2xl font-bold text-gray-900 mb-3">
-                        {{ $program->name }}
+                        {{ $program->title }}
                     </h3>
                     
                     <p class="text-gray-600 mb-4 line-clamp-3">

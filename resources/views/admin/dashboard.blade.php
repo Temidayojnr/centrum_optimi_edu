@@ -100,7 +100,7 @@
                     <div class="text-right">
                         <span class="text-lg font-bold text-green-600">₦{{ number_format($donation->amount, 2) }}</span>
                         @if($donation->program)
-                        <p class="text-xs text-gray-500">{{ $donation->program->name }}</p>
+                        <p class="text-xs text-gray-500">{{ $donation->program->title }}</p>
                         @endif
                     </div>
                 </div>

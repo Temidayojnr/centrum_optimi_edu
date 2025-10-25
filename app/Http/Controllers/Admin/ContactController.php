@@ -3,8 +3,10 @@
 namespace App\Http\Controllers\Admin;
 
 use App\Http\Controllers\Controller;
+use App\Mail\ContactReplyMail;
 use App\Models\Contact;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Mail;
 
 class ContactController extends Controller
 {
@@ -43,9 +45,13 @@ class ContactController extends Controller
         ]);
 
         // Send email to contact
-        // Mail::to($contact->email)->send(new ContactReply($contact));
+        try {
+            Mail::to($contact->email)->send(new ContactReplyMail($contact));
+        } catch (\Exception $e) {
+            return redirect()->back()->with('error', 'Reply saved but email could not be sent: ' . $e->getMessage());
+        }
 
-        return redirect()->back()->with('success', 'Reply sent successfully.');
+        return redirect()->back()->with('success', 'Reply sent successfully and email delivered to ' . $contact->email);
     }
 
     public function destroy(Contact $contact)

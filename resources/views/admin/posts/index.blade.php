@@ -114,7 +114,7 @@
                         @endif
                     </td>
                     <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">
-                        {{ $post->views_count }}
+                        {{ number_format($post->views) }}
                     </td>
                     <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">
                         {{ $post->published_at ? $post->published_at->format('M d, Y') : '-' }}

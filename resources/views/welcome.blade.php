@@ -117,7 +117,7 @@
             @foreach($featured_programs as $program)
             <div class="card group">
                 @if($program->featured_image)
-                    <img src="{{ Storage::url($program->featured_image) }}" 
+                    <img src="{{ asset('storage/' . $program->featured_image) }}" 
                          alt="{{ $program->title }}" 
                          class="w-full h-64 object-cover">
                 @else
@@ -184,7 +184,7 @@
             @foreach($recent_posts as $post)
             <article class="card group">
                 @if($post->featured_image)
-                    <img src="{{ Storage::url($post->featured_image) }}" 
+                    <img src="{{ asset('storage/' . $post->featured_image) }}" 
                          alt="{{ $post->title }}" 
                          class="w-full h-48 object-cover">
                 @else
@@ -226,7 +226,7 @@
         <div class="grid grid-cols-2 md:grid-cols-3 gap-4">
             @foreach($gallery_items as $item)
             <div class="relative overflow-hidden rounded-lg group cursor-pointer aspect-square">
-                <img src="{{ Storage::url($item->file_path) }}" 
+                <img src="{{ asset('storage/' . $item->file_path) }}" 
                      alt="{{ $item->title }}" 
                      class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300">
                 <div class="absolute inset-0 bg-black bg-opacity-0 group-hover:bg-opacity-50 transition-all duration-300 flex items-center justify-center">

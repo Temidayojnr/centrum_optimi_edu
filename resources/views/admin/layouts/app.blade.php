@@ -184,6 +184,9 @@
          x-transition:leave-end="opacity-0"
          class="fixed inset-0 bg-black bg-opacity-50 z-30 lg:hidden"></div>
 
+    <!-- Notifications -->
+    <x-notification />
+
     @stack('scripts')
 </body>
 </html>

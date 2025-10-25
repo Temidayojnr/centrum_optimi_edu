@@ -13,7 +13,7 @@ class GalleryController extends Controller
     public function index()
     {
         $galleryItems = GalleryItem::with('program')->latest()->paginate(20);
-        $programs = Program::orderBy('name')->get();
+        $programs = Program::orderBy('title')->get();
         return view('admin.gallery.index', compact('galleryItems', 'programs'));
     }
 

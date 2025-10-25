@@ -63,8 +63,8 @@
                 <tr class="hover:bg-gray-50">
                     <td class="px-6 py-4">
                         <div class="flex items-center">
-                            @if($program->image)
-                            <img src="{{ asset('storage/' . $program->image) }}" alt="{{ $program->name }}" class="w-12 h-12 rounded-lg object-cover mr-3">
+                            @if($program->featured_image)
+                            <img src="{{ asset('storage/' . $program->featured_image) }}" alt="{{ $program->title }}" class="w-12 h-12 rounded-lg object-cover mr-3">
                             @else
                             <div class="w-12 h-12 rounded-lg bg-gold-100 flex items-center justify-center mr-3">
                                 <svg class="w-6 h-6 text-gold-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -73,7 +73,7 @@
                             </div>
                             @endif
                             <div>
-                                <div class="text-sm font-medium text-gray-900">{{ $program->name }}</div>
+                                <div class="text-sm font-medium text-gray-900">{{ $program->title }}</div>
                                 <div class="text-sm text-gray-500">{{ Str::limit($program->short_description ?? $program->description, 50) }}</div>
                             </div>
                         </div>

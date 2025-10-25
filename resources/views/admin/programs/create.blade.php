@@ -36,14 +36,14 @@
                 
                 <div class="space-y-4">
                     <div>
-                        <label for="name" class="block text-sm font-medium text-gray-700 mb-2">Program Name *</label>
+                        <label for="title" class="block text-sm font-medium text-gray-700 mb-2">Program Name *</label>
                         <input type="text" 
-                               name="name" 
-                               id="name" 
-                               value="{{ old('name', $program->name ?? '') }}"
+                               name="title" 
+                               id="title" 
+                               value="{{ old('title', $program->title ?? '') }}"
                                required
-                               class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-gold-500 focus:border-gold-500 @error('name') border-red-500 @enderror">
-                        @error('name')
+                               class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-gold-500 focus:border-gold-500 @error('title') border-red-500 @enderror">
+                        @error('title')
                             <p class="mt-1 text-sm text-red-600">{{ $message }}</p>
                         @enderror
                     </div>
@@ -183,24 +183,24 @@
             <div class="bg-white rounded-xl shadow-md p-6">
                 <h3 class="text-lg font-bold text-gray-900 mb-4">Featured Image</h3>
                 
-                @if(isset($program) && $program->image)
+                @if(isset($program) && $program->featured_image)
                 <div class="mb-4">
-                    <img src="{{ asset('storage/' . $program->image) }}" 
+                    <img src="{{ asset('storage/' . $program->featured_image) }}" 
                          alt="Current image" 
                          class="w-full h-48 object-cover rounded-lg">
                 </div>
                 @endif
 
                 <div>
-                    <label for="image" class="block text-sm font-medium text-gray-700 mb-2">
-                        {{ isset($program) && $program->image ? 'Change Image' : 'Upload Image' }}
+                    <label for="featured_image" class="block text-sm font-medium text-gray-700 mb-2">
+                        {{ isset($program) && $program->featured_image ? 'Change Image' : 'Upload Image' }}
                     </label>
                     <input type="file" 
-                           name="image" 
-                           id="image" 
+                           name="featured_image" 
+                           id="featured_image" 
                            accept="image/*"
-                           class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-gold-500 focus:border-gold-500 @error('image') border-red-500 @enderror">
-                    @error('image')
+                           class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-gold-500 focus:border-gold-500 @error('featured_image') border-red-500 @enderror">
+                    @error('featured_image')
                         <p class="mt-1 text-sm text-red-600">{{ $message }}</p>
                     @enderror
                     <p class="mt-1 text-xs text-gray-500">JPG, PNG or GIF (Max 2MB)</p>

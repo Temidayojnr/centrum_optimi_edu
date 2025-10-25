@@ -47,28 +47,28 @@
                 
                 <!-- Desktop Navigation -->
                 <div class="hidden md:flex md:items-center md:space-x-6">
-                    <a href="{{ route('home') }}" class="text-gray-700 hover:text-gold-600 px-3 py-2 text-sm font-medium transition-colors {{ request()->routeIs('home') ? 'text-gold-600 font-semibold' : '' }}">
+                    <a href="{{ route('home') }}" class="px-3 py-2 text-sm font-medium transition-colors relative {{ request()->routeIs('home') ? 'text-gold-600 font-semibold border-b-2 border-gold-600' : 'text-gray-700 hover:text-gold-600' }}">
                         Home
                     </a>
-                    <a href="{{ route('about') }}" class="text-gray-700 hover:text-gold-600 px-3 py-2 text-sm font-medium transition-colors {{ request()->routeIs('about') ? 'text-gold-600 font-semibold' : '' }}">
+                    <a href="{{ route('about') }}" class="px-3 py-2 text-sm font-medium transition-colors relative {{ request()->routeIs('about') ? 'text-gold-600 font-semibold border-b-2 border-gold-600' : 'text-gray-700 hover:text-gold-600' }}">
                         About Us
                     </a>
-                    <a href="{{ route('programs.index') }}" class="text-gray-700 hover:text-gold-600 px-3 py-2 text-sm font-medium transition-colors {{ request()->routeIs('programs.*') ? 'text-gold-600 font-semibold' : '' }}">
+                    <a href="{{ route('programs.index') }}" class="px-3 py-2 text-sm font-medium transition-colors relative {{ request()->routeIs('programs.*') ? 'text-gold-600 font-semibold border-b-2 border-gold-600' : 'text-gray-700 hover:text-gold-600' }}">
                         Programs
                     </a>
-                    <a href="{{ route('blog.index') }}" class="text-gray-700 hover:text-gold-600 px-3 py-2 text-sm font-medium transition-colors {{ request()->routeIs('blog.*') ? 'text-gold-600 font-semibold' : '' }}">
+                    <a href="{{ route('blog.index') }}" class="px-3 py-2 text-sm font-medium transition-colors relative {{ request()->routeIs('blog.*') ? 'text-gold-600 font-semibold border-b-2 border-gold-600' : 'text-gray-700 hover:text-gold-600' }}">
                         Blog
                     </a>
-                    <a href="{{ route('gallery') }}" class="text-gray-700 hover:text-gold-600 px-3 py-2 text-sm font-medium transition-colors {{ request()->routeIs('gallery') ? 'text-gold-600 font-semibold' : '' }}">
+                    <a href="{{ route('gallery') }}" class="px-3 py-2 text-sm font-medium transition-colors relative {{ request()->routeIs('gallery') ? 'text-gold-600 font-semibold border-b-2 border-gold-600' : 'text-gray-700 hover:text-gold-600' }}">
                         Gallery
                     </a>
-                    <a href="{{ route('contact') }}" class="text-gray-700 hover:text-gold-600 px-3 py-2 text-sm font-medium transition-colors {{ request()->routeIs('contact') ? 'text-gold-600 font-semibold' : '' }}">
+                    <a href="{{ route('contact') }}" class="px-3 py-2 text-sm font-medium transition-colors relative {{ request()->routeIs('contact') ? 'text-gold-600 font-semibold border-b-2 border-gold-600' : 'text-gray-700 hover:text-gold-600' }}">
                         Contact
                     </a>
-                    <a href="{{ route('donate') }}" class="btn-primary ml-4">
+                    <a href="{{ route('donate') }}" class="btn-primary ml-4 {{ request()->routeIs('donate') ? 'ring-2 ring-gold-400' : '' }}">
                         Donate Now
                     </a>
-                    <a href="{{ route('get-involved') }}" class="btn-secondary">
+                    <a href="{{ route('get-involved') }}" class="btn-secondary {{ request()->routeIs('get-involved') ? 'ring-2 ring-gray-400' : '' }}">
                         Get Involved
                     </a>
                 </div>
@@ -97,14 +97,14 @@
              x-transition:leave-end="opacity-0 transform scale-95"
              class="md:hidden">
             <div class="px-2 pt-2 pb-3 space-y-1 bg-white shadow-lg">
-                <a href="{{ route('home') }}" class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-gold-600 hover:bg-gray-50">Home</a>
-                <a href="{{ route('about') }}" class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-gold-600 hover:bg-gray-50">About Us</a>
-                <a href="{{ route('programs.index') }}" class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-gold-600 hover:bg-gray-50">Programs</a>
-                <a href="{{ route('blog.index') }}" class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-gold-600 hover:bg-gray-50">Blog</a>
-                <a href="{{ route('gallery') }}" class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-gold-600 hover:bg-gray-50">Gallery</a>
-                <a href="{{ route('contact') }}" class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-gold-600 hover:bg-gray-50">Contact</a>
-                <a href="{{ route('donate') }}" class="block px-3 py-2 rounded-md text-base font-medium text-white bg-gold-600 hover:bg-gold-700">Donate Now</a>
-                <a href="{{ route('get-involved') }}" class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 bg-gray-100 hover:bg-gray-200">Get Involved</a>
+                <a href="{{ route('home') }}" class="block px-3 py-2 rounded-md text-base font-medium {{ request()->routeIs('home') ? 'text-gold-600 bg-gold-50 font-semibold' : 'text-gray-700 hover:text-gold-600 hover:bg-gray-50' }}">Home</a>
+                <a href="{{ route('about') }}" class="block px-3 py-2 rounded-md text-base font-medium {{ request()->routeIs('about') ? 'text-gold-600 bg-gold-50 font-semibold' : 'text-gray-700 hover:text-gold-600 hover:bg-gray-50' }}">About Us</a>
+                <a href="{{ route('programs.index') }}" class="block px-3 py-2 rounded-md text-base font-medium {{ request()->routeIs('programs.*') ? 'text-gold-600 bg-gold-50 font-semibold' : 'text-gray-700 hover:text-gold-600 hover:bg-gray-50' }}">Programs</a>
+                <a href="{{ route('blog.index') }}" class="block px-3 py-2 rounded-md text-base font-medium {{ request()->routeIs('blog.*') ? 'text-gold-600 bg-gold-50 font-semibold' : 'text-gray-700 hover:text-gold-600 hover:bg-gray-50' }}">Blog</a>
+                <a href="{{ route('gallery') }}" class="block px-3 py-2 rounded-md text-base font-medium {{ request()->routeIs('gallery') ? 'text-gold-600 bg-gold-50 font-semibold' : 'text-gray-700 hover:text-gold-600 hover:bg-gray-50' }}">Gallery</a>
+                <a href="{{ route('contact') }}" class="block px-3 py-2 rounded-md text-base font-medium {{ request()->routeIs('contact') ? 'text-gold-600 bg-gold-50 font-semibold' : 'text-gray-700 hover:text-gold-600 hover:bg-gray-50' }}">Contact</a>
+                <a href="{{ route('donate') }}" class="block px-3 py-2 rounded-md text-base font-medium {{ request()->routeIs('donate') ? 'text-white bg-gold-700' : 'text-white bg-gold-600 hover:bg-gold-700' }}">Donate Now</a>
+                <a href="{{ route('get-involved') }}" class="block px-3 py-2 rounded-md text-base font-medium {{ request()->routeIs('get-involved') ? 'text-gray-900 bg-gray-200 font-semibold' : 'text-gray-700 bg-gray-100 hover:bg-gray-200' }}">Get Involved</a>
             </div>
         </div>
     </nav>
@@ -191,6 +191,9 @@
             </div>
         </div>
     </footer>
+    
+    <!-- Notifications -->
+    <x-notification />
     
     @stack('scripts')
 </body>

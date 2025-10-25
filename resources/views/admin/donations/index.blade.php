@@ -31,7 +31,7 @@
                 <option value="">All Programs</option>
                 @foreach($programs as $program)
                     <option value="{{ $program->id }}" {{ request('program_id') == $program->id ? 'selected' : '' }}>
-                        {{ $program->name }}
+                        {{ $program->title }}
                     </option>
                 @endforeach
             </select>
@@ -133,7 +133,7 @@
                     </td>
                     <td class="px-6 py-4">
                         @if($donation->program)
-                            <span class="text-sm text-gray-900">{{ $donation->program->name }}</span>
+                            <span class="text-sm text-gray-900">{{ $donation->program->title }}</span>
                         @else
                             <span class="text-sm text-gray-500 italic">General Donation</span>
                         @endif

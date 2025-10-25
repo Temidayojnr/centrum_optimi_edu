@@ -21,7 +21,7 @@ class DonationController extends Controller
         }
 
         $donations = $query->paginate(20);
-        $programs = \App\Models\Program::orderBy('name')->get();
+        $programs = \App\Models\Program::orderBy('title')->get();
 
         return view('admin.donations.index', compact('donations', 'programs'));
     }

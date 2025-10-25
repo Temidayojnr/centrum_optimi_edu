@@ -26,7 +26,7 @@
             </button>
             @foreach($programs as $program)
             <button onclick="filterGallery('{{ $program->slug }}')" class="filter-btn px-6 py-2 rounded-full font-medium transition-all duration-200 bg-gray-200 text-gray-700 hover:bg-gold-100 hover:text-gold-800">
-                {{ $program->name }}
+                {{ $program->title }}
             </button>
             @endforeach
         </div>
@@ -42,8 +42,8 @@
             <div class="gallery-item group" data-category="{{ $item->program ? $item->program->slug : 'all' }}">
                 <div class="relative overflow-hidden rounded-xl shadow-lg bg-white transition-transform duration-300 hover:scale-105">
                     <div class="aspect-w-16 aspect-h-12 relative h-64">
-                        @if($item->image_url)
-                        <img src="{{ asset('storage/' . $item->image_url) }}" 
+                        @if($item->file_path)
+                        <img src="{{ asset('storage/' . $item->file_path) }}" 
                              alt="{{ $item->title }}" 
                              class="w-full h-full object-cover">
                         @else
@@ -63,7 +63,7 @@
                                 @endif
                                 @if($item->program)
                                 <span class="inline-block mt-3 px-3 py-1 bg-gold-600 text-white text-xs rounded-full">
-                                    {{ $item->program->name }}
+                                    {{ $item->program->title }}
                                 </span>
                                 @endif
                             </div>

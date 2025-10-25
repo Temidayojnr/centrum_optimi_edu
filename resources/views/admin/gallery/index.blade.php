@@ -68,7 +68,7 @@
         <div class="p-4">
             <h3 class="font-semibold text-gray-900 mb-1">{{ $item->title }}</h3>
             @if($item->program)
-                <p class="text-xs text-gray-500 mb-2">{{ $item->program->name }}</p>
+                <p class="text-xs text-gray-500 mb-2">{{ $item->program->title }}</p>
             @endif
             @if($item->description)
                 <p class="text-sm text-gray-600">{{ Str::limit($item->description, 60) }}</p>
@@ -149,7 +149,7 @@
                         class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-gold-500">
                     <option value="">None</option>
                     @foreach($programs as $program)
-                        <option value="{{ $program->id }}">{{ $program->name }}</option>
+                        <option value="{{ $program->id }}">{{ $program->title }}</option>
                     @endforeach
                 </select>
             </div>
