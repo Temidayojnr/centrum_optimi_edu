@@ -97,7 +97,7 @@
                         </div>
                         <div class="ml-4">
                             <h3 class="text-lg font-semibold text-gray-900">Email</h3>
-                            <p class="text-gray-600">info@centrumoptimiedufoundation.org</p>
+                            <p class="text-gray-600">centrumoptimieduf@gmail.com</p>
                         </div>
                     </div>
                     
@@ -111,7 +111,7 @@
                         </div>
                         <div class="ml-4">
                             <h3 class="text-lg font-semibold text-gray-900">Phone</h3>
-                            <p class="text-gray-600">+234 XXX XXX XXXX</p>
+                            <p class="text-gray-600">+234 8134 304234</p>
                         </div>
                     </div>
                     
@@ -125,8 +125,9 @@
                             </div>
                         </div>
                         <div class="ml-4">
-                            <h3 class="text-lg font-semibold text-gray-900">Office</h3>
+                            <h3 class="text-lg font-semibold text-gray-900">Offices</h3>
                             <p class="text-gray-600">Nigeria</p>
+                            <p class="text-gray-600">Canada</p>
                         </div>
                     </div>
                 </div>
