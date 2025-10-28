@@ -129,16 +129,11 @@
                 <!-- Payment Method -->
                 <div>
                     <h3 class="text-xl font-semibold text-gray-900 mb-4">Payment Method</h3>
-                    <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                    <div class="grid grid-cols-1 gap-4">
                         <label class="flex items-center p-4 border-2 border-gray-300 rounded-lg cursor-pointer hover:border-gold-500 transition-colors">
                             <input type="radio" name="payment_method" value="paystack" checked 
                                    class="h-4 w-4 text-gold-600 focus:ring-gold-500">
                             <span class="ml-3 text-gray-700 font-medium">Paystack (Card, Bank Transfer)</span>
-                        </label>
-                        <label class="flex items-center p-4 border-2 border-gray-300 rounded-lg cursor-pointer hover:border-gold-500 transition-colors">
-                            <input type="radio" name="payment_method" value="flutterwave" 
-                                   class="h-4 w-4 text-gold-600 focus:ring-gold-500">
-                            <span class="ml-3 text-gray-700 font-medium">Flutterwave</span>
                         </label>
                     </div>
                 </div>

@@ -32,10 +32,6 @@
                 <img src="https://images.unsplash.com/photo-1503676260728-1c00da094a0b?w=800&q=80" 
                      alt="Children learning" 
                      class="rounded-2xl shadow-2xl w-full">
-                <div class="absolute -bottom-6 -left-6 bg-white p-6 rounded-xl shadow-xl max-w-xs">
-                    <p class="text-3xl font-bold text-gold-600">{{ number_format($total_beneficiaries ?? 0) }}+</p>
-                    <p class="text-gray-600">Lives Impacted</p>
-                </div>
             </div>
         </div>
     </div>
@@ -44,7 +40,7 @@
 <!-- Stats Section -->
 <section class="bg-gray-900 text-white py-16">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div class="grid grid-cols-1 md:grid-cols-3 gap-8 text-center">
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8 text-center">
             <div>
                 <p class="text-4xl md:text-5xl font-bold text-gold-400 mb-2">₦{{ number_format($total_donated ?? 0, 2) }}</p>
                 <p class="text-gray-300 text-lg">Total Donations</p>
@@ -52,10 +48,6 @@
             <div>
                 <p class="text-4xl md:text-5xl font-bold text-gold-400 mb-2">{{ $featured_programs->count() ?? 0 }}</p>
                 <p class="text-gray-300 text-lg">Active Programs</p>
-            </div>
-            <div>
-                <p class="text-4xl md:text-5xl font-bold text-gold-400 mb-2">{{ number_format($total_beneficiaries ?? 0) }}+</p>
-                <p class="text-gray-300 text-lg">Beneficiaries Reached</p>
             </div>
         </div>
     </div>
