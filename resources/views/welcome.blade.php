@@ -31,7 +31,10 @@
             <div class="relative" data-aos="fade-left">
                 <img src="https://images.unsplash.com/photo-1503676260728-1c00da094a0b?w=800&q=80" 
                      alt="Children learning" 
-                     class="rounded-2xl shadow-2xl w-full">
+                     class="rounded-2xl shadow-2xl w-full"
+                     width="800"
+                     height="533"
+                     loading="eager">
             </div>
         </div>
     </div>
@@ -111,7 +114,10 @@
                 @if($program->featured_image)
                     <img src="{{ asset('storage/' . $program->featured_image) }}" 
                          alt="{{ $program->title }}" 
-                         class="w-full h-64 object-cover">
+                         class="w-full h-64 object-cover"
+                         width="400"
+                         height="256"
+                         loading="lazy">
                 @else
                     <div class="w-full h-64 bg-gradient-to-br from-gold-400 to-gold-600 flex items-center justify-center">
                         <svg class="w-20 h-20 text-white opacity-50" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -178,7 +184,10 @@
                 @if($post->featured_image)
                     <img src="{{ asset('storage/' . $post->featured_image) }}" 
                          alt="{{ $post->title }}" 
-                         class="w-full h-48 object-cover">
+                         class="w-full h-48 object-cover"
+                         width="400"
+                         height="192"
+                         loading="lazy">
                 @else
                     <div class="w-full h-48 bg-gradient-to-br from-gray-200 to-gray-300"></div>
                 @endif
@@ -220,7 +229,10 @@
             <div class="relative overflow-hidden rounded-lg group cursor-pointer aspect-square">
                 <img src="{{ asset('storage/' . $item->file_path) }}" 
                      alt="{{ $item->title }}" 
-                     class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300">
+                     class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300"
+                     width="400"
+                     height="400"
+                     loading="lazy">
                 <div class="absolute inset-0 bg-black bg-opacity-0 group-hover:bg-opacity-50 transition-all duration-300 flex items-center justify-center">
                     <p class="text-white font-semibold opacity-0 group-hover:opacity-100 transition-opacity duration-300">{{ $item->title }}</p>
                 </div>

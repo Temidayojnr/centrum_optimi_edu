@@ -27,6 +27,12 @@
     <link rel="icon" type="image/x-icon" href="{{ asset('favicon.ico') }}">
     <link rel="apple-touch-icon" sizes="180x180" href="{{ asset('apple-touch-icon.png') }}">
     
+    <!-- Performance Optimization: Preconnect to external domains -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://images.unsplash.com">
+    <link rel="dns-prefetch" href="https://unpkg.com">
+    
     <!-- Fonts & Styles -->
     @vite(['resources/css/app.css', 'resources/js/app.js'])
     
@@ -40,7 +46,7 @@
                 <!-- Logo -->
                 <div class="flex-shrink-0 flex items-center">
                     <a href="{{ route('home') }}" class="flex items-center space-x-3">
-                        <img src="{{ asset('logos/centrum..1.jpg') }}" alt="Centrum Optimi Logo" class="h-12 w-auto">
+                        <img src="{{ asset('logos/centrum..1.jpg') }}" alt="Centrum Optimi Logo" class="h-12 w-auto" width="48" height="48" loading="eager">
                         <span class="font-display font-bold text-xl text-gray-900 hidden sm:block">Centrum Optimi</span>
                     </a>
                 </div>
