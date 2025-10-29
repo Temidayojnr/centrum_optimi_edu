@@ -6,7 +6,7 @@ const urlsToCache = [
     '/',
     '/css/app.css',
     '/js/app.js',
-    '/logos/centrum..1.jpg',
+    '/logos/logo.jpeg',
 ];
 
 // Install service worker

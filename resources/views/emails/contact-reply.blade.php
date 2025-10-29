@@ -159,7 +159,7 @@
     <div class="email-container">
         <!-- Header -->
         <div class="email-header">
-            <img src="{{ asset('logos/centrum..1.jpg') }}" alt="Centrum Optimi Logo">
+            <img src="{{ asset('logos/logo.jpeg') }}" alt="Centrum Optimi Logo">
             <h1>Response to Your Message</h1>
         </div>
 

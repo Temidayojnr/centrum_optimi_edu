@@ -22,7 +22,7 @@
                         </svg>
                     </button>
                     <a href="{{ route('admin.dashboard') }}" class="flex items-center ml-4 lg:ml-0">
-                        <img src="{{ asset('logos/centrum..1.jpg') }}" alt="Logo" class="h-10 w-auto rounded">
+                        <img src="{{ asset('logos/logo.jpeg') }}" alt="Logo" class="h-10 w-auto rounded">
                         <span class="ml-3 text-xl font-bold text-gray-800 hidden sm:block">Admin Panel</span>
                     </a>
                 </div>

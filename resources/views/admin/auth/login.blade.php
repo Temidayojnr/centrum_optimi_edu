@@ -10,10 +10,12 @@
     <div class="min-h-screen flex items-center justify-center px-4 sm:px-6 lg:px-8">
         <div class="max-w-md w-full">
             <!-- Logo -->
-            <div class="text-center mb-8">
-                <img src="{{ asset('logos/centrum..1.jpg') }}" alt="Centrum Optimi Logo" class="h-20 w-auto mx-auto mb-4">
-                <h2 class="text-3xl font-display font-bold text-gray-900">Admin Login</h2>
-                <p class="mt-2 text-sm text-gray-600">Centrum Optimi Educational Foundation</p>
+                    <div class="w-full max-w-md">
+            <div class="bg-white rounded-xl shadow-2xl p-8">
+                <div class="text-center mb-8">
+                <img src="{{ asset('logos/logo.jpeg') }}" alt="Centrum Optimi Logo" class="h-20 w-auto mx-auto mb-4">
+                <h2 class="text-3xl font-bold text-gray-900">Admin Login</h2>
+                <p class="text-gray-600 mt-2">Centrum Optimi Educational Foundation</p>
             </div>
 
             <!-- Login Card -->

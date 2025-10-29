@@ -14,14 +14,14 @@
     <meta property="og:url" content="{{ url()->current() }}">
     <meta property="og:title" content="@yield('og_title', 'Centrum Optimi Educational Foundation')">
     <meta property="og:description" content="@yield('og_description', 'Unlocking individual excellence through access to quality education')">
-    <meta property="og:image" content="@yield('og_image', asset('logos/centrum..1.jpg'))">
+    <meta property="og:image" content="@yield('og_image', asset('logos/logo.jpeg'))">
     
     <!-- Twitter -->
     <meta property="twitter:card" content="summary_large_image">
     <meta property="twitter:url" content="{{ url()->current() }}">
     <meta property="twitter:title" content="@yield('twitter_title', 'Centrum Optimi Educational Foundation')">
     <meta property="twitter:description" content="@yield('twitter_description', 'Unlocking individual excellence through access to quality education')">
-    <meta property="twitter:image" content="@yield('twitter_image', asset('logos/centrum..1.jpg'))">
+    <meta property="twitter:image" content="@yield('twitter_image', asset('logos/logo.jpeg'))">
     
     <!-- Favicon -->
     <link rel="icon" type="image/x-icon" href="{{ asset('favicon.ico') }}">
@@ -46,7 +46,7 @@
                 <!-- Logo -->
                 <div class="flex-shrink-0 flex items-center">
                     <a href="{{ route('home') }}" class="flex items-center space-x-3">
-                        <img src="{{ asset('logos/centrum..1.jpg') }}" alt="Centrum Optimi Logo" class="h-12 w-auto" width="48" height="48" loading="eager">
+                        <img src="{{ asset('logos/logo.jpeg') }}" alt="Centrum Optimi Logo" class="h-12 w-auto" width="48" height="48" loading="eager">
                         <span class="font-display font-bold text-xl text-gray-900 hidden sm:block">Centrum Optimi</span>
                     </a>
                 </div>
