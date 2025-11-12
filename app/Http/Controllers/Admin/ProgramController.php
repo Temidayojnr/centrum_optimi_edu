@@ -54,6 +54,11 @@ class ProgramController extends Controller
         return view('admin.programs.edit', compact('program'));
     }
 
+    public function show(Program $program)
+    {
+        return view('admin.programs.show', compact('program'));
+    }
+
     public function update(Request $request, Program $program)
     {
         $validated = $request->validate([
