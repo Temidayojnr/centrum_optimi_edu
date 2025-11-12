@@ -4,6 +4,7 @@ namespace App\Models;
 
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
+use Illuminate\Support\Str;
 
 class Donation extends Model
 {
@@ -23,6 +24,7 @@ class Donation extends Model
         'is_anonymous',
         'payment_data',
         'paid_at',
+        'token',
     ];
 
     protected $casts = [
@@ -31,6 +33,32 @@ class Donation extends Model
         'payment_data' => 'array',
         'paid_at' => 'datetime',
     ];
+
+    /**
+     * Boot the model and automatically generate unique token.
+     */
+    protected static function boot()
+    {
+        parent::boot();
+
+        static::creating(function ($donation) {
+            if (empty($donation->token)) {
+                $donation->token = static::generateUniqueToken();
+            }
+        });
+    }
+
+    /**
+     * Generate a unique token for the donation.
+     */
+    protected static function generateUniqueToken(): string
+    {
+        do {
+            $token = Str::random(32);
+        } while (static::where('token', $token)->exists());
+
+        return $token;
+    }
 
     public function program()
     {

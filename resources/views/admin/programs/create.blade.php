@@ -116,11 +116,13 @@
                     </div>
 
                     <div>
-                        <label for="start_date" class="block text-sm font-medium text-gray-700 mb-2">Start Date</label>
+                        <label for="start_date" class="block text-sm font-medium text-gray-700 mb-2">
+                            Start Date <span class="text-gray-400 text-xs">(Optional)</span>
+                        </label>
                         <input type="date" 
                                name="start_date" 
                                id="start_date" 
-                               value="{{ old('start_date', $program->start_date ?? '') }}"
+                               value="{{ old('start_date', isset($program) && $program->start_date ? $program->start_date->format('Y-m-d') : '') }}"
                                class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-gold-500 focus:border-gold-500 @error('start_date') border-red-500 @enderror">
                         @error('start_date')
                             <p class="mt-1 text-sm text-red-600">{{ $message }}</p>
@@ -128,11 +130,13 @@
                     </div>
 
                     <div>
-                        <label for="end_date" class="block text-sm font-medium text-gray-700 mb-2">End Date</label>
+                        <label for="end_date" class="block text-sm font-medium text-gray-700 mb-2">
+                            End Date <span class="text-gray-400 text-xs">(Optional)</span>
+                        </label>
                         <input type="date" 
                                name="end_date" 
                                id="end_date" 
-                               value="{{ old('end_date', $program->end_date ?? '') }}"
+                               value="{{ old('end_date', isset($program) && $program->end_date ? $program->end_date->format('Y-m-d') : '') }}"
                                class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-gold-500 focus:border-gold-500 @error('end_date') border-red-500 @enderror">
                         @error('end_date')
                             <p class="mt-1 text-sm text-red-600">{{ $message }}</p>
@@ -267,11 +271,31 @@
                        class="w-full block text-center px-6 py-3 bg-gray-200 text-gray-700 rounded-lg hover:bg-gray-300 transition-colors font-semibold">
                         Cancel
                     </a>
+                    
+                    @if(isset($program))
+                    <button type="button" 
+                            onclick="confirmDelete()"
+                            class="w-full px-6 py-3 bg-red-600 text-white rounded-lg hover:bg-red-700 transition-colors font-semibold">
+                        <svg class="w-5 h-5 inline mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 7l-.867 12.142A2 2 0 0116.138 21H7.862a2 2 0 01-1.995-1.858L5 7m5 4v6m4-6v6m1-10V4a1 1 0 00-1-1h-4a1 1 0 00-1 1v3M4 7h16"></path>
+                        </svg>
+                        Delete Program
+                    </button>
+                    @endif
                 </div>
             </div>
         </div>
     </div>
 </form>
+
+@if(isset($program))
+<!-- Delete Confirmation Modal -->
+<form id="deleteForm" method="POST" action="{{ route('admin.programs.destroy', $program) }}" style="display: none;">
+    @csrf
+    @method('DELETE')
+</form>
+@endif
+
 @endsection
 
 @push('styles')
@@ -314,5 +338,12 @@
 
         console.log('✅ Summernote initialized for Programs!');
     });
+
+    // Delete confirmation function
+    function confirmDelete() {
+        if (confirm('Are you sure you want to delete this program? This action cannot be undone.')) {
+            document.getElementById('deleteForm').submit();
+        }
+    }
 </script>
 @endpush

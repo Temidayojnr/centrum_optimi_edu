@@ -186,13 +186,30 @@
 @push('scripts')
 <script>
 function deleteProgram(id) {
-    document.getElementById('deleteModal').classList.remove('hidden');
-    document.getElementById('deleteForm').action = `/admin/programs/${id}`;
+    const modal = document.getElementById('deleteModal');
+    const form = document.getElementById('deleteForm');
+    
+    modal.classList.remove('hidden');
+    form.action = `/admin/programs/${id}`;
 }
 
 function closeDeleteModal() {
     document.getElementById('deleteModal').classList.add('hidden');
 }
+
+// Close modal when clicking outside
+document.getElementById('deleteModal')?.addEventListener('click', function(e) {
+    if (e.target === this) {
+        closeDeleteModal();
+    }
+});
+
+// Close modal with Escape key
+document.addEventListener('keydown', function(e) {
+    if (e.key === 'Escape') {
+        closeDeleteModal();
+    }
+});
 </script>
 @endpush
 @endsection

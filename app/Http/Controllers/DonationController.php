@@ -134,15 +134,16 @@ class DonationController extends Controller
                 // Send confirmation email
                 // Mail::to($donation->donor_email)->send(new DonationConfirmation($donation));
 
-                return redirect()->route('donation.success', $donation->id);
+                return redirect()->route('donation.success', $donation->token);
             }
         }
 
         return redirect()->route('donate')->with('error', 'Payment verification failed.');
     }
 
-    public function success(Donation $donation)
+    public function success($token)
     {
+        $donation = Donation::where('token', $token)->firstOrFail();
         if ($donation->status !== 'successful') {
             abort(404);
         }

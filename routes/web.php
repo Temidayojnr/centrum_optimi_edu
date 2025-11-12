@@ -19,6 +19,7 @@ use App\Http\Controllers\Admin\PostController as AdminPostController;
 use App\Http\Controllers\Admin\ContactController as AdminContactController;
 use App\Http\Controllers\Admin\GalleryController as AdminGalleryController;
 use App\Http\Controllers\Admin\UserController as AdminUserController;
+use App\Http\Controllers\Admin\LogViewerController;
 
 /*
 |--------------------------------------------------------------------------
@@ -38,7 +39,7 @@ Route::get('/programs/{program:slug}', [ProgramController::class, 'show'])->name
 Route::get('/donate', [DonationController::class, 'index'])->name('donate');
 Route::post('/donate/initiate', [DonationController::class, 'initiate'])->name('donation.initiate');
 Route::get('/donation/callback', [DonationController::class, 'callback'])->name('donation.callback');
-Route::get('/donation/success/{donation}', [DonationController::class, 'success'])->name('donation.success');
+Route::get('/donation/status/{token}', [DonationController::class, 'success'])->name('donation.success');
 
 // Get Involved / Volunteers
 Route::get('/get-involved', [VolunteerController::class, 'index'])->name('get-involved');
@@ -108,5 +109,11 @@ Route::prefix('admin')->name('admin.')->middleware(['admin'])->group(function ()
     // Users (Super Admin Only)
     Route::middleware(['super_admin'])->group(function () {
         Route::resource('users', AdminUserController::class);
+        
+        // System Logs
+        Route::get('logs', [LogViewerController::class, 'index'])->name('logs.index');
+        Route::get('logs/download/{file}', [LogViewerController::class, 'download'])->name('logs.download');
+        Route::post('logs/clear/{file}', [LogViewerController::class, 'clear'])->name('logs.clear');
+        Route::delete('logs/delete/{file}', [LogViewerController::class, 'delete'])->name('logs.delete');
     });
 });

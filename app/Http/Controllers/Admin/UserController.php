@@ -3,9 +3,12 @@
 namespace App\Http\Controllers\Admin;
 
 use App\Http\Controllers\Controller;
+use App\Mail\AdminAccountCreated;
 use App\Models\User;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Hash;
+use Illuminate\Support\Facades\Log;
+use Illuminate\Support\Facades\Mail;
 
 class UserController extends Controller
 {
@@ -30,11 +33,24 @@ class UserController extends Controller
             'is_active' => 'boolean',
         ]);
 
+        // Store the plain password before hashing (for email)
+        $plainPassword = $validated['password'];
+        
+        // Hash the password
         $validated['password'] = Hash::make($validated['password']);
 
-        User::create($validated);
+        // Create the user
+        $user = User::create($validated);
 
-        return redirect()->route('admin.users.index')->with('success', 'User created successfully.');
+        // Send welcome email with credentials
+        try {
+            Mail::to($user->email)->send(new AdminAccountCreated($user, $plainPassword));
+        } catch (\Exception $e) {
+            // Log the error but don't fail the user creation
+            Log::error('Failed to send admin account creation email: ' . $e->getMessage());
+        }
+
+        return redirect()->route('admin.users.index')->with('success', 'User created successfully and welcome email sent to ' . $user->email);
     }
 
     public function edit(User $user)
