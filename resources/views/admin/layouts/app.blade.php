@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>@yield('title', 'Admin Panel') - Centrum Optimi</title>
+    <title>@yield('title', 'Admin Dashboard') - Centrum Optimi</title>
     @vite(['resources/css/app.css', 'resources/js/app.js'])
     <style>
         [x-cloak] { display: none !important; }
@@ -23,7 +23,7 @@
                     </button>
                     <a href="{{ route('admin.dashboard') }}" class="flex items-center ml-4 lg:ml-0">
                         <img src="{{ asset('logos/logo.jpeg') }}" alt="Logo" class="h-10 w-auto rounded">
-                        <span class="ml-3 text-xl font-bold text-gray-800 hidden sm:block">Admin Panel</span>
+                        <span class="ml-3 text-xl font-bold text-gray-800 hidden sm:block">Admin Dashboard</span>
                     </a>
                 </div>
                 

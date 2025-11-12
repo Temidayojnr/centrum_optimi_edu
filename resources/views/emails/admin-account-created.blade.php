@@ -256,7 +256,7 @@
             <!-- Login Button -->
             <div style="text-align: center;">
                 <a href="{{ route('admin.login') }}" class="login-button">
-                    Login to Admin Panel
+                    Login to Admin Dashboard
                 </a>
             </div>
 
