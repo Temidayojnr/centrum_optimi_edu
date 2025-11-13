@@ -46,7 +46,7 @@
                 <!-- Logo -->
                 <div class="flex-shrink-0 flex items-center">
                     <a href="{{ route('home') }}" class="flex items-center space-x-3">
-                        <img src="{{ asset('logos/logo.jpeg') }}" alt="Centrum Optimi Logo" class="h-12 w-auto" width="48" height="48" loading="eager">
+                        <img src="{{ asset('logos/logo.jpeg') }}" alt="Centrum Optimi Logo" class="h-12 w-auto rounded-full object-cover" width="48" height="48" loading="eager">
                         <span class="font-display font-bold text-xl text-gray-900 hidden sm:block">Centrum Optimi</span>
                     </a>
                 </div>
@@ -191,9 +191,6 @@
             
             <div class="border-t border-gray-800 mt-8 pt-8 text-center text-sm text-gray-400">
                 <p>&copy; {{ date('Y') }} Centrum Optimi Educational Foundation. All rights reserved.</p>
-                <p class="mt-2">
-                    <a href="{{ route('admin.login') }}" class="hover:text-gold-400 transition-colors">Admin Login</a>
-                </p>
             </div>
         </div>
     </footer>

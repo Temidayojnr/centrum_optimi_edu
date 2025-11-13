@@ -232,6 +232,7 @@
                     </div>
 
                     <div class="flex items-center">
+                        <input type="hidden" name="is_published" value="0">
                         <input type="checkbox" 
                                name="is_published" 
                                id="is_published" 
@@ -244,6 +245,7 @@
                     </div>
 
                     <div class="flex items-center">
+                        <input type="hidden" name="is_featured" value="0">
                         <input type="checkbox" 
                                name="is_featured" 
                                id="is_featured" 

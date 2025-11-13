@@ -38,8 +38,10 @@
 
                     <!-- Amount -->
                     <div class="border-b border-gray-200 pb-4">
-                        <p class="text-sm text-gray-500 mb-1">Amount Donated</p>
-                        <p class="text-2xl font-bold text-green-600">₦{{ number_format($donation->amount, 2) }}</p>
+                        <p class="text-sm text-gray-500 mb-1">Donation Status</p>
+                        <p class="text-2xl font-bold text-green-600">
+                            <i class="fas fa-check-circle mr-2"></i>Payment Successful
+                        </p>
                     </div>
 
                     <!-- Donor Name -->
@@ -104,7 +106,7 @@
             </svg>
             <h3 class="text-2xl font-bold text-gray-900 mb-4">Your Impact</h3>
             <p class="text-lg text-gray-700 leading-relaxed">
-                Your generous donation of <strong class="text-gold-600">₦{{ number_format($donation->amount, 2) }}</strong> will help us provide quality education to underprivileged children and bridge the educational gap in rural communities. Thank you for being a part of our mission to unlock individual excellence through education.
+                Your generous donation will help us provide quality education to underprivileged children and bridge the educational gap in rural communities. Thank you for being a part of our mission to unlock individual excellence through education.
             </p>
         </div>
 
