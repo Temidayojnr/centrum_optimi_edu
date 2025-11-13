@@ -41,38 +41,6 @@
     </div>
 </section>
 
-<!-- Mission & Vision -->
-<section class="py-20 bg-gray-50">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
-            <div class="card p-10">
-                <div class="w-16 h-16 bg-gold-100 rounded-full flex items-center justify-center mb-6">
-                    <svg class="w-8 h-8 text-gold-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
-                    </svg>
-                </div>
-                <h3 class="text-2xl font-bold text-gray-900 mb-4">Our Mission</h3>
-                <p class="text-gray-600 text-lg leading-relaxed">
-                    To bridge the educational gap that exists among the underprivileged and in rural communities by providing access to quality formal and non-formal education.
-                </p>
-            </div>
-            
-            <div class="card p-10">
-                <div class="w-16 h-16 bg-gold-100 rounded-full flex items-center justify-center mb-6">
-                    <svg class="w-8 h-8 text-gold-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"/>
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z"/>
-                    </svg>
-                </div>
-                <h3 class="text-2xl font-bold text-gray-900 mb-4">Our Vision</h3>
-                <p class="text-gray-600 text-lg leading-relaxed">
-                    We believe there is excellence in every individual, and this excellence can be nurtured and expressed through access to quality education, hands-on learning, and skill development, leading to a progressive and healthy society.
-                </p>
-            </div>
-        </div>
-    </div>
-</section>
-
 <!-- Our Values -->
 <section class="py-20 bg-white">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">

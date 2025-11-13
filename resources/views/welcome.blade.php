@@ -43,57 +43,55 @@
 <!-- Stats Section -->
 <section class="bg-gray-900 text-white py-16">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-8 text-center">
-            <div>
-                <p class="text-4xl md:text-5xl font-bold text-gold-400 mb-2">₦{{ number_format($total_donated ?? 0, 2) }}</p>
-                <p class="text-gray-300 text-lg">Total Donations</p>
-            </div>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8 text-center">
             <div>
                 <p class="text-4xl md:text-5xl font-bold text-gold-400 mb-2">{{ $featured_programs->count() ?? 0 }}</p>
                 <p class="text-gray-300 text-lg">Active Programs</p>
+            </div>
+            <div>
+                <p class="text-4xl md:text-5xl font-bold text-gold-400 mb-2">500+</p>
+                <p class="text-gray-300 text-lg">Students Impacted</p>
+            </div>
+            <div>
+                <p class="text-4xl md:text-5xl font-bold text-gold-400 mb-2">10+</p>
+                <p class="text-gray-300 text-lg">Communities Reached</p>
             </div>
         </div>
     </div>
 </section>
 
-<!-- About Section -->
-<section class="py-20 bg-white">
+<!-- Mission & Vision -->
+<section class="py-20 bg-gray-50">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="text-center mb-16">
-            <h2 class="section-title">Centre of Excellence</h2>
+            <h2 class="section-title">Our Mission & Vision</h2>
             <p class="section-subtitle">Building a society where excellence is a shared reality for all</p>
         </div>
         
-        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-            <div class="card p-8 text-center">
-                <div class="w-16 h-16 bg-gold-100 rounded-full flex items-center justify-center mx-auto mb-6">
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+            <div class="card p-8">
+                <div class="w-16 h-16 bg-gold-100 rounded-full flex items-center justify-center mb-6">
                     <svg class="w-8 h-8 text-gold-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
                     </svg>
                 </div>
-                <h3 class="text-xl font-bold mb-4">Our Mission</h3>
-                <p class="text-gray-600">To bridge the educational gap that exists among the underprivileged and in rural communities.</p>
+                <h3 class="text-2xl font-bold mb-4">Our Mission</h3>
+                <p class="text-gray-600 leading-relaxed">
+                    To bridge the educational gap that exists among the underprivileged and in rural communities by providing access to quality formal and non-formal education. We are committed to equipping individuals with both theoretical knowledge and practical skills that empower them to build better lives and contribute meaningfully to society.
+                </p>
             </div>
             
-            <div class="card p-8 text-center">
-                <div class="w-16 h-16 bg-gold-100 rounded-full flex items-center justify-center mx-auto mb-6">
+            <div class="card p-8">
+                <div class="w-16 h-16 bg-gold-100 rounded-full flex items-center justify-center mb-6">
                     <svg class="w-8 h-8 text-gold-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"/>
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z"/>
                     </svg>
                 </div>
-                <h3 class="text-xl font-bold mb-4">Our Vision</h3>
-                <p class="text-gray-600">We believe there is excellence in every individual that can be nurtured through quality education.</p>
-            </div>
-            
-            <div class="card p-8 text-center">
-                <div class="w-16 h-16 bg-gold-100 rounded-full flex items-center justify-center mx-auto mb-6">
-                    <svg class="w-8 h-8 text-gold-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4.354a4 4 0 110 5.292M15 21H3v-1a6 6 0 0112 0v1zm0 0h6v-1a6 6 0 00-9-5.197M13 7a4 4 0 11-8 0 4 4 0 018 0z"/>
-                    </svg>
-                </div>
-                <h3 class="text-xl font-bold mb-4">Our Impact</h3>
-                <p class="text-gray-600">Creating progressive, healthy societies through hands-on learning and skill development.</p>
+                <h3 class="text-2xl font-bold mb-4">Our Vision</h3>
+                <p class="text-gray-600 leading-relaxed">
+                    We believe there is excellence in every individual, and this excellence can be nurtured and expressed through access to quality education, hands-on learning, and skill development, leading to a progressive and healthy society where everyone has the opportunity to reach their full potential.
+                </p>
             </div>
         </div>
     </div>
