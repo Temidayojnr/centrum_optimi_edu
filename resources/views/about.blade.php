@@ -101,7 +101,7 @@
             <p class="section-subtitle">Meet the dedicated leaders guiding our mission</p>
         </div>
         
-        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div class="grid grid-cols-1 gap-8 max-w-4xl mx-auto">
             <!-- Mercy Oladele - Founder -->
             <div class="card group">
                 <div class="relative overflow-hidden">
