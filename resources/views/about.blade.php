@@ -101,66 +101,72 @@
             <p class="section-subtitle">Meet the dedicated leaders guiding our mission</p>
         </div>
         
-        <div class="grid grid-cols-1 gap-8 max-w-4xl mx-auto">
+        <div class="space-y-12 max-w-6xl mx-auto">
             <!-- Mercy Oladele - Founder -->
             <div class="card group">
-                <div class="relative overflow-hidden">
-                    <img src="{{ asset('images/Mercy.jpeg') }}" 
-                         alt="Mercy Oladele" 
-                         class="w-full h-80 object-cover object-center group-hover:scale-105 transition-transform duration-300"
-                         width="400"
-                         height="320"
-                         loading="lazy">
-                    <div class="absolute top-4 right-4">
-                        <span class="px-3 py-1 bg-gold-600 text-white text-xs font-semibold rounded-full shadow-lg">
-                            Founder
-                        </span>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-0">
+                    <div class="relative overflow-hidden">
+                        <img src="{{ asset('images/Mercy.jpeg') }}" 
+                             alt="Mercy Oladele" 
+                             class="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-300 min-h-[400px]"
+                             width="400"
+                             height="400"
+                             loading="lazy">
+                        <div class="absolute top-4 right-4">
+                            <span class="px-3 py-1 bg-gold-600 text-white text-xs font-semibold rounded-full shadow-lg">
+                                Founder
+                            </span>
+                        </div>
                     </div>
-                </div>
-                <div class="p-6">
-                    <h3 class="text-2xl font-bold text-gray-900 mb-2">Mercy Oladele</h3>
-                    <p class="text-gold-600 font-semibold mb-4">Founder & Trustee</p>
-                    <p class="text-gray-600 leading-relaxed">
-                        Mercy Oladele is a knowledge enthusiast with over a decade of experience in the fashion industry. She has since transitioned into global education and development, where she focuses on empowering individuals to realize their full potential. Mercy believes that everyone is unique and deserves the opportunity to express themselves fully without limitations. She is committed to helping others learn, grow, and thrive.
-                    </p>
+                    <div class="p-8 flex flex-col justify-center">
+                        <h3 class="text-2xl font-bold text-gray-900 mb-2">Mercy Oladele</h3>
+                        <p class="text-gold-600 font-semibold mb-4">Founder & Trustee</p>
+                        <p class="text-gray-600 leading-relaxed">
+                            Mercy Oladele is a knowledge enthusiast with over a decade of experience in the fashion industry. She has since transitioned into global education and development, where she focuses on empowering individuals to realize their full potential. Mercy believes that everyone is unique and deserves the opportunity to express themselves fully without limitations. She is committed to helping others learn, grow, and thrive.
+                        </p>
+                    </div>
                 </div>
             </div>
 
             <!-- Olakitan Oladimeji -->
             <div class="card group">
-                <div class="relative overflow-hidden">
-                    <img src="{{ asset('images/Olakitan.jpeg') }}" 
-                         alt="Olakitan Oladimeji" 
-                         class="w-full h-80 object-cover object-center group-hover:scale-105 transition-transform duration-300"
-                         width="400"
-                         height="320"
-                         loading="lazy">
-                </div>
-                <div class="p-6">
-                    <h3 class="text-2xl font-bold text-gray-900 mb-2">Olakitan Oladimeji</h3>
-                    <p class="text-gold-600 font-semibold mb-4">Trustee</p>
-                    <p class="text-gray-600 leading-relaxed">
-                        Olakitan Oladimeji is a land surveyor with over fifteen years of experience in mapping and measuring land. His expertise includes establishing property boundaries, determining elevations, and preparing sites for construction. Olakitan uses his extensive knowledge to support and guide the overall vision of the foundation.
-                    </p>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-0">
+                    <div class="relative overflow-hidden md:order-2">
+                        <img src="{{ asset('images/Olakitan.jpeg') }}" 
+                             alt="Olakitan Oladimeji" 
+                             class="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-300 min-h-[400px]"
+                             width="400"
+                             height="400"
+                             loading="lazy">
+                    </div>
+                    <div class="p-8 flex flex-col justify-center md:order-1">
+                        <h3 class="text-2xl font-bold text-gray-900 mb-2">Olakitan Oladimeji</h3>
+                        <p class="text-gold-600 font-semibold mb-4">Trustee</p>
+                        <p class="text-gray-600 leading-relaxed">
+                            Olakitan Oladimeji is a land surveyor with over fifteen years of experience in mapping and measuring land. His expertise includes establishing property boundaries, determining elevations, and preparing sites for construction. Olakitan uses his extensive knowledge to support and guide the overall vision of the foundation.
+                        </p>
+                    </div>
                 </div>
             </div>
 
             <!-- Olatunji Amowoyagi -->
             <div class="card group">
-                <div class="relative overflow-hidden">
-                    <img src="{{ asset('images/Olatunji.jpeg') }}" 
-                         alt="Olatunji Amowoyagi" 
-                         class="w-full h-80 object-cover object-center group-hover:scale-105 transition-transform duration-300"
-                         width="400"
-                         height="320"
-                         loading="lazy">
-                </div>
-                <div class="p-6">
-                    <h3 class="text-2xl font-bold text-gray-900 mb-2">Olatunji Amowoyagi</h3>
-                    <p class="text-gold-600 font-semibold mb-4">Trustee</p>
-                    <p class="text-gray-600 leading-relaxed">
-                        Olatunji Amowoyagi has more than nine years of experience in downstream operations, which includes sales, marketing, and depot management. He is proficient in numerical analysis, data interpretation, and the application of machine learning techniques. In addition to his professional experience, Olatunji is a skilled mathematics instructor with a proven track record of teaching both in traditional classroom settings and through e-learning platforms.
-                    </p>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-0">
+                    <div class="relative overflow-hidden">
+                        <img src="{{ asset('images/Olatunji.jpeg') }}" 
+                             alt="Olatunji Amowoyagi" 
+                             class="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-300 min-h-[400px]"
+                             width="400"
+                             height="400"
+                             loading="lazy">
+                    </div>
+                    <div class="p-8 flex flex-col justify-center">
+                        <h3 class="text-2xl font-bold text-gray-900 mb-2">Olatunji Amowoyagi</h3>
+                        <p class="text-gold-600 font-semibold mb-4">Trustee</p>
+                        <p class="text-gray-600 leading-relaxed">
+                            Olatunji Amowoyagi has more than nine years of experience in downstream operations, which includes sales, marketing, and depot management. He is proficient in numerical analysis, data interpretation, and the application of machine learning techniques. In addition to his professional experience, Olatunji is a skilled mathematics instructor with a proven track record of teaching both in traditional classroom settings and through e-learning platforms.
+                        </p>
+                    </div>
                 </div>
             </div>
         </div>
