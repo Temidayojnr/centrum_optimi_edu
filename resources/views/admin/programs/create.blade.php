@@ -107,7 +107,7 @@
                         <input type="number" 
                                name="beneficiaries_count" 
                                id="beneficiaries_count" 
-                               value="{{ old('beneficiaries_count', $program->beneficiaries_count ?? '') }}"
+                               value="{{ old('beneficiaries_count', $program->beneficiaries ?? '') }}"
                                min="0"
                                class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-gold-500 focus:border-gold-500 @error('beneficiaries_count') border-red-500 @enderror">
                         @error('beneficiaries_count')
