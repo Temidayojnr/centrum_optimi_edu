@@ -20,7 +20,7 @@
             <select name="status" id="status" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-gold-500">
                 <option value="">All Statuses</option>
                 <option value="pending" {{ request('status') === 'pending' ? 'selected' : '' }}>Pending</option>
-                <option value="completed" {{ request('status') === 'completed' ? 'selected' : '' }}>Completed</option>
+                <option value="successful" {{ request('status') === 'successful' ? 'selected' : '' }}>Successful</option>
                 <option value="failed" {{ request('status') === 'failed' ? 'selected' : '' }}>Failed</option>
             </select>
         </div>
@@ -70,8 +70,8 @@
     <div class="bg-gradient-to-br from-blue-500 to-blue-600 rounded-xl shadow-lg p-6 text-white">
         <div class="flex items-center justify-between">
             <div>
-                <p class="text-blue-100 text-sm font-medium">Completed</p>
-                <h3 class="text-3xl font-bold mt-2">{{ $donations->where('status', 'completed')->count() }}</h3>
+                <p class="text-blue-100 text-sm font-medium">Successful</p>
+                <h3 class="text-3xl font-bold mt-2">{{ $donations->where('status', 'successful')->count() }}</h3>
             </div>
             <svg class="w-12 h-12 text-blue-200" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
@@ -142,9 +142,9 @@
                         <span class="text-sm font-bold text-gray-900">₦{{ number_format($donation->amount, 2) }}</span>
                     </td>
                     <td class="px-6 py-4 whitespace-nowrap">
-                        @if($donation->status === 'completed')
+                        @if($donation->status === 'successful')
                             <span class="px-3 py-1 inline-flex text-xs leading-5 font-semibold rounded-full bg-green-100 text-green-800">
-                                Completed
+                                Successful
                             </span>
                         @elseif($donation->status === 'pending')
                             <span class="px-3 py-1 inline-flex text-xs leading-5 font-semibold rounded-full bg-yellow-100 text-yellow-800">
