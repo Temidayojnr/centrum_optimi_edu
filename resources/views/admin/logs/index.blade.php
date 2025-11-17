@@ -156,22 +156,43 @@
                                 {{ $log['timestamp'] }}
                             </td>
                             <td class="px-6 py-4 whitespace-nowrap">
-                                @php
-                                    $levelColors = [
-                                        'emergency' => 'bg-red-900 text-white',
-                                        'alert' => 'bg-red-700 text-white',
-                                        'critical' => 'bg-red-600 text-white',
-                                        'error' => 'bg-red-500 text-white',
-                                        'warning' => 'bg-yellow-500 text-white',
-                                        'notice' => 'bg-blue-500 text-white',
-                                        'info' => 'bg-green-500 text-white',
-                                        'debug' => 'bg-gray-500 text-white',
-                                    ];
-                                    $colorClass = $levelColors[$log['level']] ?? 'bg-gray-500 text-white';
-                                @endphp
-                                <span class="px-3 py-1 inline-flex text-xs font-bold rounded-full {{ $colorClass }}">
-                                    {{ strtoupper($log['level']) }}
-                                </span>
+                                @if($log['level'] === 'emergency')
+                                    <span class="px-3 py-1 inline-flex text-xs font-bold rounded-full bg-red-900 text-white">
+                                        EMERGENCY
+                                    </span>
+                                @elseif($log['level'] === 'alert')
+                                    <span class="px-3 py-1 inline-flex text-xs font-bold rounded-full bg-red-700 text-white">
+                                        ALERT
+                                    </span>
+                                @elseif($log['level'] === 'critical')
+                                    <span class="px-3 py-1 inline-flex text-xs font-bold rounded-full bg-red-600 text-white">
+                                        CRITICAL
+                                    </span>
+                                @elseif($log['level'] === 'error')
+                                    <span class="px-3 py-1 inline-flex text-xs font-bold rounded-full bg-red-500 text-white">
+                                        ERROR
+                                    </span>
+                                @elseif($log['level'] === 'warning')
+                                    <span class="px-3 py-1 inline-flex text-xs font-bold rounded-full bg-yellow-500 text-white">
+                                        WARNING
+                                    </span>
+                                @elseif($log['level'] === 'notice')
+                                    <span class="px-3 py-1 inline-flex text-xs font-bold rounded-full bg-blue-500 text-white">
+                                        NOTICE
+                                    </span>
+                                @elseif($log['level'] === 'info')
+                                    <span class="px-3 py-1 inline-flex text-xs font-bold rounded-full bg-green-500 text-white">
+                                        INFO
+                                    </span>
+                                @elseif($log['level'] === 'debug')
+                                    <span class="px-3 py-1 inline-flex text-xs font-bold rounded-full bg-gray-500 text-white">
+                                        DEBUG
+                                    </span>
+                                @else
+                                    <span class="px-3 py-1 inline-flex text-xs font-bold rounded-full bg-gray-500 text-white">
+                                        {{ strtoupper($log['level']) }}
+                                    </span>
+                                @endif
                             </td>
                             <td class="px-6 py-4">
                                 <div class="space-y-3">
@@ -266,7 +287,7 @@
             
             <!-- Modal Body -->
             <div class="px-6 py-4 overflow-y-auto max-h-[calc(90vh-140px)]">
-                <pre id="modalContent" class="text-sm font-mono text-gray-800 whitespace-pre-wrap leading-relaxed bg-gray-50 p-4 rounded border border-gray-200"></pre>
+                <pre id="modalContent" class="text-sm font-mono text-gray-800 whitespace-pre-wrap break-words leading-relaxed bg-gray-50 p-4 rounded border border-gray-200 overflow-x-auto"></pre>
             </div>
             
             <!-- Modal Footer -->
