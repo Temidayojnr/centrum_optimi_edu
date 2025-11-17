@@ -66,7 +66,7 @@
             <!-- Content Column -->
             <div class="lg:col-span-2">
                 <div class="prose prose-lg max-w-none mb-12">
-                    {!! $program->description !!}
+                    <p class="text-gray-700 leading-relaxed">{{ strip_tags($program->description) }}</p>
                 </div>
 
                 @if($program->objectives)

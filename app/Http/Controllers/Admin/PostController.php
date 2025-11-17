@@ -75,6 +75,7 @@ class PostController extends Controller
         }
 
         $validated['slug'] = Str::slug($validated['title']);
+        $validated['author_name'] = auth()->user()->name;
 
         if ($validated['status'] === 'published' && empty($post->published_at) && empty($validated['published_at'])) {
             $validated['published_at'] = now();

@@ -40,26 +40,6 @@
     </div>
 </section>
 
-<!-- Stats Section -->
-<section class="bg-gray-900 text-white py-16">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div class="grid grid-cols-1 md:grid-cols-3 gap-8 text-center">
-            <div>
-                <p class="text-4xl md:text-5xl font-bold text-gold-400 mb-2">{{ $featured_programs->count() ?? 0 }}</p>
-                <p class="text-gray-300 text-lg">Active Programs</p>
-            </div>
-            <div>
-                <p class="text-4xl md:text-5xl font-bold text-gold-400 mb-2">500+</p>
-                <p class="text-gray-300 text-lg">Students Impacted</p>
-            </div>
-            <div>
-                <p class="text-4xl md:text-5xl font-bold text-gold-400 mb-2">10+</p>
-                <p class="text-gray-300 text-lg">Communities Reached</p>
-            </div>
-        </div>
-    </div>
-</section>
-
 <!-- Mission & Vision -->
 <section class="py-20 bg-gray-50">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">

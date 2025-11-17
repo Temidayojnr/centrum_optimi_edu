@@ -42,8 +42,14 @@ Route::get('/donation/callback', [DonationController::class, 'callback'])->name(
 Route::get('/donation/status/{token}', [DonationController::class, 'success'])->name('donation.success');
 
 // Get Involved / Volunteers
-Route::get('/get-involved', [VolunteerController::class, 'index'])->name('get-involved');
+Route::get('/volunteer', [VolunteerController::class, 'index'])->name('volunteer');
+Route::get('/get-involved', function () {
+    return redirect()->route('volunteer');
+})->name('get-involved');
 Route::post('/volunteer/apply', [VolunteerController::class, 'store'])->name('volunteer.store');
+
+// Partnership
+Route::view('/partnership', 'partnership')->name('partnership');
 
 // Blog
 Route::get('/blog', [BlogController::class, 'index'])->name('blog.index');
