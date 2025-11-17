@@ -25,26 +25,46 @@ class ProgramController extends Controller
     {
         $validated = $request->validate([
             'title' => 'required|string|max:255',
+            'short_description' => 'nullable|string|max:500',
             'description' => 'required|string',
-            'content' => 'required|string',
+            'objectives' => 'nullable|string',
             'featured_image' => 'nullable|image|mimes:jpeg,png,jpg,gif|max:2048',
             'status' => 'required|in:active,completed,upcoming',
             'start_date' => 'nullable|date',
             'end_date' => 'nullable|date',
             'location' => 'nullable|string|max:255',
-            'beneficiaries' => 'nullable|integer|min:0',
-            'budget' => 'nullable|numeric|min:0',
-            'is_featured' => 'boolean',
-            'is_published' => 'boolean',
+            'beneficiaries_count' => 'nullable|integer|min:0',
+            'target_amount' => 'nullable|numeric|min:0',
+            'raised_amount' => 'nullable|numeric|min:0',
+            'is_featured' => 'nullable|boolean',
+            'is_published' => 'nullable|boolean',
         ]);
 
         if ($request->hasFile('featured_image')) {
             $validated['featured_image'] = $request->file('featured_image')->store('programs', 'public');
         }
 
-        $validated['slug'] = Str::slug($validated['title']);
+        // Map form fields to model fields
+        $data = [
+            'title' => $validated['title'],
+            'description' => $validated['description'],
+            'content' => $validated['description'], // Use description as content
+            'status' => $validated['status'],
+            'start_date' => $validated['start_date'] ?? null,
+            'end_date' => $validated['end_date'] ?? null,
+            'location' => $validated['location'] ?? null,
+            'beneficiaries' => $validated['beneficiaries_count'] ?? null,
+            'budget' => $validated['target_amount'] ?? null,
+            'is_featured' => $request->has('is_featured') ? true : false,
+            'is_published' => $request->has('is_published') ? true : false,
+            'slug' => Str::slug($validated['title']),
+        ];
 
-        Program::create($validated);
+        if (isset($validated['featured_image'])) {
+            $data['featured_image'] = $validated['featured_image'];
+        }
+
+        Program::create($data);
 
         return redirect()->route('admin.programs.index')->with('success', 'Program created successfully.');
     }
@@ -63,17 +83,19 @@ class ProgramController extends Controller
     {
         $validated = $request->validate([
             'title' => 'required|string|max:255',
+            'short_description' => 'nullable|string|max:500',
             'description' => 'required|string',
-            'content' => 'required|string',
+            'objectives' => 'nullable|string',
             'featured_image' => 'nullable|image|mimes:jpeg,png,jpg,gif|max:2048',
             'status' => 'required|in:active,completed,upcoming',
             'start_date' => 'nullable|date',
             'end_date' => 'nullable|date',
             'location' => 'nullable|string|max:255',
-            'beneficiaries' => 'nullable|integer|min:0',
-            'budget' => 'nullable|numeric|min:0',
-            'is_featured' => 'boolean',
-            'is_published' => 'boolean',
+            'beneficiaries_count' => 'nullable|integer|min:0',
+            'target_amount' => 'nullable|numeric|min:0',
+            'raised_amount' => 'nullable|numeric|min:0',
+            'is_featured' => 'nullable|boolean',
+            'is_published' => 'nullable|boolean',
         ]);
 
         if ($request->hasFile('featured_image')) {
@@ -83,9 +105,27 @@ class ProgramController extends Controller
             $validated['featured_image'] = $request->file('featured_image')->store('programs', 'public');
         }
 
-        $validated['slug'] = Str::slug($validated['title']);
+        // Map form fields to model fields
+        $data = [
+            'title' => $validated['title'],
+            'description' => $validated['description'],
+            'content' => $validated['description'], // Use description as content
+            'status' => $validated['status'],
+            'start_date' => $validated['start_date'] ?? null,
+            'end_date' => $validated['end_date'] ?? null,
+            'location' => $validated['location'] ?? null,
+            'beneficiaries' => $validated['beneficiaries_count'] ?? null,
+            'budget' => $validated['target_amount'] ?? null,
+            'is_featured' => $request->has('is_featured') ? true : false,
+            'is_published' => $request->has('is_published') ? true : false,
+            'slug' => Str::slug($validated['title']),
+        ];
 
-        $program->update($validated);
+        if (isset($validated['featured_image'])) {
+            $data['featured_image'] = $validated['featured_image'];
+        }
+
+        $program->update($data);
 
         return redirect()->route('admin.programs.index')->with('success', 'Program updated successfully.');
     }
