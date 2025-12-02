@@ -221,9 +221,9 @@
             <div style="height: 1px; background-color: #34495e; margin: 20px 0;"></div>
 
             <div class="social-links">
-                <a href="#">Facebook</a> |
-                <a href="#">Twitter</a> |
-                <a href="#">Instagram</a> |
+                <a href="https://facebook.com/centrumoptimieduf" target="_blank">Facebook</a> |
+                <a href="https://twitter.com/C_optimieduf" target="_blank">Twitter/X</a> |
+                <a href="https://instagram.com/centrumoptimieduf" target="_blank">Instagram</a> |
                 <a href="#">LinkedIn</a>
             </div>
 

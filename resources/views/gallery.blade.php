@@ -103,9 +103,6 @@
             Join us in transforming lives through education and empowerment
         </p>
         <div class="flex flex-col sm:flex-row gap-4 justify-center">
-            <a href="{{ route('donate') }}" class="inline-flex items-center justify-center px-8 py-4 border-2 border-white text-lg font-semibold rounded-lg text-white hover:bg-white hover:text-gold-600 transition-all duration-200">
-                Support Our Work
-            </a>
             <a href="{{ route('get-involved') }}" class="inline-flex items-center justify-center px-8 py-4 bg-white text-lg font-semibold rounded-lg text-gold-600 hover:bg-gold-50 transition-all duration-200">
                 Get Involved
             </a>

@@ -105,10 +105,6 @@
                            class="flex-1 text-center px-4 py-2 bg-gold-600 text-white rounded-lg hover:bg-gold-700 transition-colors font-semibold">
                             Learn More
                         </a>
-                        <a href="{{ route('donate', ['program' => $program->id]) }}" 
-                           class="px-4 py-2 border-2 border-gold-600 text-gold-600 rounded-lg hover:bg-gold-50 transition-colors font-semibold">
-                            Donate
-                        </a>
                     </div>
                 </div>
             </div>
@@ -144,10 +140,7 @@
             Join us in transforming lives through education and empowerment
         </p>
         <div class="flex flex-col sm:flex-row gap-4 justify-center">
-            <a href="{{ route('donate') }}" class="btn-primary bg-white text-gold-600 hover:bg-gold-50">
-                Donate Now
-            </a>
-            <a href="{{ route('get-involved') }}" class="btn-secondary bg-transparent text-white border-white hover:bg-white/10">
+            <a href="{{ route('get-involved') }}" class="btn-primary bg-white text-gold-600 hover:bg-gold-50">
                 Volunteer With Us
             </a>
         </div>

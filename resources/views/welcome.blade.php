@@ -14,16 +14,10 @@
                     Unlocking Individual <span class="text-gold-600">Excellence</span> Through Education
                 </h1>
                 <p class="text-lg md:text-xl text-gray-600 mb-8 max-w-2xl">
-                    We bridge the educational gap in underprivileged and rural communities, nurturing excellence through access to quality education and skill development.
+                    We envision a world where individual excellence can be nurtured and expressed through access to quality education, hands-on learning, and skill development.
                 </p>
                 <div class="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
-                    <a href="{{ route('donate') }}" class="btn-primary text-lg px-8 py-4">
-                        <svg class="w-5 h-5 mr-2 inline" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"/>
-                        </svg>
-                        Donate Now
-                    </a>
-                    <a href="{{ route('get-involved') }}" class="btn-secondary text-lg px-8 py-4">
+                    <a href="{{ route('get-involved') }}" class="btn-primary text-lg px-8 py-4">
                         Join Us
                     </a>
                 </div>
@@ -137,9 +131,6 @@
             Your support helps us provide quality education to those who need it most. Every contribution counts.
         </p>
         <div class="flex flex-col sm:flex-row gap-4 justify-center">
-            <a href="{{ route('donate') }}" class="inline-flex items-center justify-center px-8 py-4 border-2 border-white text-lg font-medium rounded-lg text-white bg-transparent hover:bg-white hover:text-gold-600 transition-all duration-200">
-                Donate Now
-            </a>
             <a href="{{ route('get-involved') }}" class="inline-flex items-center justify-center px-8 py-4 border-2 border-white text-lg font-medium rounded-lg text-gold-600 bg-white hover:bg-gray-100 transition-all duration-200">
                 Become a Volunteer
             </a>
