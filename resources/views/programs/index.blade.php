@@ -53,7 +53,7 @@
                     </h3>
                     
                     <p class="text-gray-600 mb-4 line-clamp-3">
-                        {{ $program->short_description ?? Str::limit($program->description, 120) }}
+                        {{ strip_tags($program->short_description ?? $program->description) }}
                     </p>
 
                     <!-- Progress Bar (if goals are set) -->

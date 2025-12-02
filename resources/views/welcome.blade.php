@@ -104,7 +104,7 @@
                         </span>
                     </div>
                     <h3 class="text-xl font-bold mb-3 group-hover:text-gold-600 transition-colors">{{ $program->title }}</h3>
-                    <p class="text-gray-600 mb-4 line-clamp-3">{{ $program->description }}</p>
+                    <p class="text-gray-600 mb-4 line-clamp-3">{{ strip_tags($program->description) }}</p>
                     <a href="{{ route('programs.show', $program->slug) }}" class="text-gold-600 hover:text-gold-700 font-semibold inline-flex items-center">
                         Learn More 
                         <svg class="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
