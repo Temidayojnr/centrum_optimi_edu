@@ -149,4 +149,107 @@
     </div>
 </section>
 
+<!-- Offline Donation Information -->
+<section class="py-20 bg-gray-50">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="card p-8 md:p-12">
+            <div class="text-center mb-8">
+                <h2 class="text-3xl font-bold text-gray-900 mb-4">Offline Donations</h2>
+                <p class="text-gray-600">You can also make direct bank transfers to support our mission</p>
+            </div>
+            
+            <div class="bg-gradient-to-br from-gold-50 to-white border-2 border-gold-200 rounded-xl p-8">
+                <h3 class="text-2xl font-bold text-gray-900 mb-6 text-center">Centrum Optimi Educational Foundation</h3>
+                
+                <div class="space-y-6">
+                    <!-- Bank Accounts -->
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                        <!-- Naira Account -->
+                        <div class="bg-white rounded-lg p-6 shadow-sm">
+                            <div class="flex items-center mb-3">
+                                <div class="w-10 h-10 bg-green-100 rounded-full flex items-center justify-center mr-3">
+                                    <svg class="w-5 h-5 text-green-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                                    </svg>
+                                </div>
+                                <h4 class="text-lg font-semibold text-gray-900">Naira Account (₦)</h4>
+                            </div>
+                            <p class="text-2xl font-bold text-gold-600 mb-2">3001588714</p>
+                            <p class="text-sm text-gray-500">Guaranty Trust Bank</p>
+                        </div>
+                        
+                        <!-- USD Account -->
+                        <div class="bg-white rounded-lg p-6 shadow-sm">
+                            <div class="flex items-center mb-3">
+                                <div class="w-10 h-10 bg-blue-100 rounded-full flex items-center justify-center mr-3">
+                                    <svg class="w-5 h-5 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                                    </svg>
+                                </div>
+                                <h4 class="text-lg font-semibold text-gray-900">USD Account ($)</h4>
+                            </div>
+                            <p class="text-2xl font-bold text-gold-600 mb-2">3001588738</p>
+                            <p class="text-sm text-gray-500">Guaranty Trust Bank</p>
+                        </div>
+                        
+                        <!-- GBP Account -->
+                        <div class="bg-white rounded-lg p-6 shadow-sm">
+                            <div class="flex items-center mb-3">
+                                <div class="w-10 h-10 bg-purple-100 rounded-full flex items-center justify-center mr-3">
+                                    <svg class="w-5 h-5 text-purple-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                                    </svg>
+                                </div>
+                                <h4 class="text-lg font-semibold text-gray-900">GBP Account (£)</h4>
+                            </div>
+                            <p class="text-2xl font-bold text-gold-600 mb-2">3001588752</p>
+                            <p class="text-sm text-gray-500">Guaranty Trust Bank</p>
+                        </div>
+                        
+                        <!-- EUR Account -->
+                        <div class="bg-white rounded-lg p-6 shadow-sm">
+                            <div class="flex items-center mb-3">
+                                <div class="w-10 h-10 bg-orange-100 rounded-full flex items-center justify-center mr-3">
+                                    <svg class="w-5 h-5 text-orange-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                                    </svg>
+                                </div>
+                                <h4 class="text-lg font-semibold text-gray-900">EUR Account (€)</h4>
+                            </div>
+                            <p class="text-2xl font-bold text-gold-600 mb-2">3001588776</p>
+                            <p class="text-sm text-gray-500">Guaranty Trust Bank</p>
+                        </div>
+                    </div>
+                    
+                    <!-- Swift Code -->
+                    <div class="border-t-2 border-gold-200 pt-6 mt-6">
+                        <div class="bg-white rounded-lg p-6 shadow-sm text-center">
+                            <h4 class="text-lg font-semibold text-gray-900 mb-3">SWIFT Code for International Transfers</h4>
+                            <p class="text-3xl font-bold text-gold-600 tracking-wider">GTBINGLA</p>
+                            <p class="text-sm text-gray-500 mt-2">Use this code for international wire transfers</p>
+                        </div>
+                    </div>
+                    
+                    <!-- Note -->
+                    <div class="bg-blue-50 border-l-4 border-blue-500 p-4 rounded">
+                        <div class="flex">
+                            <svg class="w-6 h-6 text-blue-500 mr-3 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                            </svg>
+                            <div>
+                                <p class="text-sm text-blue-800 font-medium">Important Note</p>
+                                <p class="text-sm text-blue-700 mt-1">
+                                    After making your transfer, please send your payment confirmation to 
+                                    <a href="mailto:centrumoptimieduf@gmail.com" class="font-semibold underline">centrumoptimieduf@gmail.com</a> 
+                                    with your name and purpose of donation.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
 @endsection
