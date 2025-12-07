@@ -76,9 +76,9 @@
                         Partnership
                     </a>
                     <a href="{{ route('donate') }}" class="btn-primary ml-4 {{ request()->routeIs('donate') ? 'ring-2 ring-gold-400' : '' }}">
-                        Donate Now
+                        Donate
                     </a>
-                    <a href="{{ route('volunteer') }}" class="btn-secondary {{ request()->routeIs('volunteer') ? 'ring-2 ring-gray-400' : '' }}">
+                    <a href="{{ route('volunteer') }}" class="btn-secondary ml-2 {{ request()->routeIs('volunteer') ? 'ring-2 ring-gray-400' : '' }}">
                         Volunteer
                     </a>
                 </div>
@@ -114,7 +114,7 @@
                 <a href="{{ route('gallery') }}" class="block px-3 py-2 rounded-md text-base font-medium {{ request()->routeIs('gallery') ? 'text-gold-600 bg-gold-50 font-semibold' : 'text-gray-700 hover:text-gold-600 hover:bg-gray-50' }}">Gallery</a>
                 <a href="{{ route('contact') }}" class="block px-3 py-2 rounded-md text-base font-medium {{ request()->routeIs('contact') ? 'text-gold-600 bg-gold-50 font-semibold' : 'text-gray-700 hover:text-gold-600 hover:bg-gray-50' }}">Contact</a>
                 <a href="{{ route('partnership') }}" class="block px-3 py-2 rounded-md text-base font-medium {{ request()->routeIs('partnership') ? 'text-gold-600 bg-gold-50 font-semibold' : 'text-gray-700 hover:text-gold-600 hover:bg-gray-50' }}">Partnership</a>
-                <a href="{{ route('donate') }}" class="block px-3 py-2 rounded-md text-base font-medium {{ request()->routeIs('donate') ? 'text-white bg-gold-700' : 'text-white bg-gold-600 hover:bg-gold-700' }}">Donate Now</a>
+                <a href="{{ route('donate') }}" class="block px-3 py-2 rounded-md text-base font-medium {{ request()->routeIs('donate') ? 'text-white bg-gold-700' : 'text-white bg-gold-600 hover:bg-gold-700' }}">Donate</a>
                 <a href="{{ route('volunteer') }}" class="block px-3 py-2 rounded-md text-base font-medium {{ request()->routeIs('volunteer') ? 'text-gray-900 bg-gray-200 font-semibold' : 'text-gray-700 bg-gray-100 hover:bg-gray-200' }}">Volunteer</a>
             </div>
         </div>
