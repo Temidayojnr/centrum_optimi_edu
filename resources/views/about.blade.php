@@ -30,12 +30,88 @@
                     <p class="text-gray-700 italic">
                         "There is excellence in every individual, and this excellence can be nurtured and expressed through access to quality education, hands-on learning, and skill development."
                     </p>
+                    <p class="text-gray-600 text-sm mt-2 font-semibold">— Mercy Oladele</p>
                 </div>
             </div>
             <div>
                 <img src="https://images.unsplash.com/photo-1427504494785-3a9ca7044f45?w=800&q=80" 
                      alt="Students learning" 
                      class="rounded-2xl shadow-2xl">
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Mission, Vision & Objectives -->
+<section class="py-20 bg-gray-50">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center mb-16">
+            <h2 class="section-title">Our Mission, Vision & Objectives</h2>
+            <p class="section-subtitle">Guiding principles that drive our work</p>
+        </div>
+        
+        <div class="max-w-4xl mx-auto space-y-6">
+            <!-- Vision -->
+            <div class="card p-8 mb-6">
+                <div class="flex items-start gap-4">
+                    <div class="w-12 h-12 bg-gold-100 rounded-full flex items-center justify-center flex-shrink-0">
+                        <svg class="w-6 h-6 text-gold-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"/>
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z"/>
+                        </svg>
+                    </div>
+                    <div>
+                        <h3 class="text-2xl font-bold text-gray-900 mb-3">Vision</h3>
+                        <p class="text-lg text-gray-600 leading-relaxed">
+                            An African society where excellent education is a shared reality for all.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Mission -->
+            <div class="card p-8 mb-6">
+                <div class="flex items-start gap-4">
+                    <div class="w-12 h-12 bg-gold-100 rounded-full flex items-center justify-center flex-shrink-0">
+                        <svg class="w-6 h-6 text-gold-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                        </svg>
+                    </div>
+                    <div>
+                        <h3 class="text-2xl font-bold text-gray-900 mb-3">Mission</h3>
+                        <p class="text-lg text-gray-600 leading-relaxed">
+                            Bridging the educational gap that exists among the underprivileged and rural communities in Africa.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Specific Objectives -->
+            <div class="card p-8 mb-6">
+                <div class="flex items-start gap-4">
+                    <div class="w-12 h-12 bg-gold-100 rounded-full flex items-center justify-center flex-shrink-0">
+                        <svg class="w-6 h-6 text-gold-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-6 9l2 2 4-4"/>
+                        </svg>
+                    </div>
+                    <div class="flex-1">
+                        <h3 class="text-2xl font-bold text-gray-900 mb-4">Specific Objectives</h3>
+                        <ol class="space-y-3">
+                            <li class="flex items-start gap-3">
+                                <span class="flex-shrink-0 w-6 h-6 bg-gold-600 text-white rounded-full flex items-center justify-center text-sm font-bold">1</span>
+                                <span class="text-lg text-gray-600 leading-relaxed">To provide access to quality formal and non-formal education.</span>
+                            </li>
+                            <li class="flex items-start gap-3">
+                                <span class="flex-shrink-0 w-6 h-6 bg-gold-600 text-white rounded-full flex items-center justify-center text-sm font-bold">2</span>
+                                <span class="text-lg text-gray-600 leading-relaxed">To equip individuals with both theoretical knowledge and practical skills.</span>
+                            </li>
+                            <li class="flex items-start gap-3">
+                                <span class="flex-shrink-0 w-6 h-6 bg-gold-600 text-white rounded-full flex items-center justify-center text-sm font-bold">3</span>
+                                <span class="text-lg text-gray-600 leading-relaxed">To unlock and nurture individual excellence where everyone can reach their highest potential.</span>
+                            </li>
+                        </ol>
+                    </div>
+                </div>
             </div>
         </div>
     </div>

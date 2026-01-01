@@ -316,15 +316,38 @@
             toolbar: [
                 ['style', ['style']],
                 ['font', ['bold', 'italic', 'underline', 'clear']],
+                ['color', ['color']],
                 ['para', ['ul', 'ol', 'paragraph']],
-                ['insert', ['link']],
-                ['view', ['fullscreen', 'codeview']]
+                ['table', ['table']],
+                ['insert', ['link', 'picture', 'video']],
+                ['view', ['fullscreen', 'codeview', 'help']]
             ],
             styleTags: [
                 'p',
                 { title: 'Heading 2', tag: 'h2', value: 'h2' },
                 { title: 'Heading 3', tag: 'h3', value: 'h3' }
-            ]
+            ],
+            popover: {
+                image: [
+                    ['image', ['resizeFull', 'resizeHalf', 'resizeQuarter', 'resizeNone']],
+                    ['float', ['floatLeft', 'floatRight', 'floatNone']],
+                    ['remove', ['removeMedia']]
+                ],
+                link: [
+                    ['link', ['linkDialogShow', 'unlink']]
+                ],
+                table: [
+                    ['add', ['addRowDown', 'addRowUp', 'addColLeft', 'addColRight']],
+                    ['delete', ['deleteRow', 'deleteCol', 'deleteTable']]
+                ],
+                air: [
+                    ['color', ['color']],
+                    ['font', ['bold', 'underline', 'clear']],
+                    ['para', ['ul', 'paragraph']],
+                    ['table', ['table']],
+                    ['insert', ['link', 'picture']]
+                ]
+            }
         });
 
         // Initialize Summernote for Objectives field
@@ -334,11 +357,12 @@
             toolbar: [
                 ['font', ['bold', 'italic']],
                 ['para', ['ul', 'ol']],
+                ['insert', ['link']],
                 ['view', ['codeview']]
             ]
         });
 
-        console.log('✅ Summernote initialized for Programs!');
+        console.log('✅ Summernote initialized for Programs with embed support!');
     });
 
     // Delete confirmation function

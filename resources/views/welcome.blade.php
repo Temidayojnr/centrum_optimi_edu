@@ -13,9 +13,6 @@
                 <h1 class="text-4xl md:text-5xl lg:text-6xl font-display font-bold text-gray-900 mb-6 leading-tight">
                     Unlocking Individual <span class="text-gold-600">Excellence</span> Through Education
                 </h1>
-                <p class="text-lg md:text-xl text-gray-600 mb-8 max-w-2xl">
-                    We envision a world where individual excellence can be nurtured and expressed through access to quality education, hands-on learning, and skill development.
-                </p>
                 <div class="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
                     <a href="{{ route('get-involved') }}" class="btn-primary text-lg px-8 py-4">
                         Join Us
@@ -37,24 +34,7 @@
 <!-- Mission & Vision -->
 <section class="py-20 bg-gray-50">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div class="text-center mb-16">
-            <h2 class="section-title">Our Mission & Vision</h2>
-            <p class="section-subtitle">Building a society where excellence is a shared reality for all</p>
-        </div>
-        
         <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
-            <div class="card p-8">
-                <div class="w-16 h-16 bg-gold-100 rounded-full flex items-center justify-center mb-6">
-                    <svg class="w-8 h-8 text-gold-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
-                    </svg>
-                </div>
-                <h3 class="text-2xl font-bold mb-4">Our Mission</h3>
-                <p class="text-gray-600 leading-relaxed">
-                    To bridge the educational gap that exists among the underprivileged and in rural communities by providing access to quality formal and non-formal education. We are committed to equipping individuals with both theoretical knowledge and practical skills that empower them to build better lives and contribute meaningfully to society.
-                </p>
-            </div>
-            
             <div class="card p-8">
                 <div class="w-16 h-16 bg-gold-100 rounded-full flex items-center justify-center mb-6">
                     <svg class="w-8 h-8 text-gold-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -64,7 +44,19 @@
                 </div>
                 <h3 class="text-2xl font-bold mb-4">Our Vision</h3>
                 <p class="text-gray-600 leading-relaxed">
-                    We believe there is excellence in every individual, and this excellence can be nurtured and expressed through access to quality education, hands-on learning, and skill development, leading to a progressive and healthy society where everyone has the opportunity to reach their full potential.
+                    An African society where excellent education is a shared reality for all.
+                </p>
+            </div>
+            
+            <div class="card p-8">
+                <div class="w-16 h-16 bg-gold-100 rounded-full flex items-center justify-center mb-6">
+                    <svg class="w-8 h-8 text-gold-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                    </svg>
+                </div>
+                <h3 class="text-2xl font-bold mb-4">Our Mission</h3>
+                <p class="text-gray-600 leading-relaxed">
+                    Bridging the educational gap that exists among the underprivileged and rural communities in Africa.
                 </p>
             </div>
         </div>
