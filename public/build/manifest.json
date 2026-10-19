@@ -1,0 +1,20 @@
+{
+  "_alpine-j6H1NlLE.js": {
+    "file": "assets/alpine-j6H1NlLE.js",
+    "name": "alpine"
+  },
+  "resources/css/app.css": {
+    "file": "assets/app-3g6qaXqh.css",
+    "src": "resources/css/app.css",
+    "isEntry": true
+  },
+  "resources/js/app.js": {
+    "file": "assets/app-D16A4f_M.js",
+    "name": "app",
+    "src": "resources/js/app.js",
+    "isEntry": true,
+    "imports": [
+      "_alpine-j6H1NlLE.js"
+    ]
+  }
+}
