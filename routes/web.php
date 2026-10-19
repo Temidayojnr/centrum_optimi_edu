@@ -97,6 +97,7 @@ Route::prefix('admin')->name('admin.')->middleware(['admin'])->group(function ()
     Route::get('volunteers', [AdminVolunteerController::class, 'index'])->name('volunteers.index');
     Route::get('volunteers/{volunteer}', [AdminVolunteerController::class, 'show'])->name('volunteers.show');
     Route::put('volunteers/{volunteer}/status', [AdminVolunteerController::class, 'updateStatus'])->name('volunteers.updateStatus');
+    Route::delete('volunteers/{volunteer}', [AdminVolunteerController::class, 'destroy'])->name('volunteers.destroy');
     
     // Blog Posts
     Route::resource('posts', AdminPostController::class);

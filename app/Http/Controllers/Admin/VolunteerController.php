@@ -41,4 +41,15 @@ class VolunteerController extends Controller
 
         return redirect()->back()->with('success', 'Volunteer status updated successfully.');
     }
+
+    public function destroy(Volunteer $volunteer)
+    {
+        if ($volunteer->status !== 'rejected') {
+            return redirect()->back()->with('error', 'Only rejected volunteers can be deleted. Reject the application first.');
+        }
+
+        $volunteer->delete();
+
+        return redirect()->route('admin.volunteers.index')->with('success', 'Volunteer deleted permanently.');
+    }
 }
