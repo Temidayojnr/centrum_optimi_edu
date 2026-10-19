@@ -4,6 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Admin Login - Centrum Optimi</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@600;700;800&display=swap">
     @vite(['resources/css/app.css', 'resources/js/app.js'])
 </head>
 <body class="bg-gray-100">
@@ -13,7 +16,7 @@
                     <div class="w-full max-w-md">
             <div class="bg-white rounded-xl shadow-2xl p-8">
                 <div class="text-center mb-8">
-                <img src="{{ asset('logos/logo.jpeg') }}" alt="Centrum Optimi Logo" class="h-20 w-auto mx-auto mb-4">
+                <img src="{{ asset('logos/logo-192.webp') }}" alt="Centrum Optimi Logo" class="h-20 w-auto mx-auto mb-4">
                 <h2 class="text-3xl font-bold text-gray-900">Admin Login</h2>
                 <p class="text-gray-600 mt-2">Centrum Optimi Educational Foundation</p>
             </div>

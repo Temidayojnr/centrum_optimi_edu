@@ -4,6 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>@yield('title', 'Admin Dashboard') - Centrum Optimi</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@600;700;800&display=swap">
     @vite(['resources/css/app.css', 'resources/js/app.js'])
     <style>
         [x-cloak] { display: none !important; }
@@ -22,7 +25,7 @@
                         </svg>
                     </button>
                     <a href="{{ route('admin.dashboard') }}" class="flex items-center ml-4 lg:ml-0">
-                        <img src="{{ asset('logos/logo.jpeg') }}" alt="Logo" class="h-10 w-auto rounded">
+                        <img src="{{ asset('logos/logo-192.webp') }}" alt="Logo" class="h-10 w-auto rounded">
                         <span class="ml-3 text-xl font-bold text-gray-800 hidden sm:block">Admin Dashboard</span>
                     </a>
                 </div>
@@ -109,6 +112,14 @@
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z"></path>
                     </svg>
                     Gallery
+                </a>
+                
+                <a href="{{ route('admin.about.edit') }}" 
+                   class="flex items-center px-4 py-3 mb-2 rounded-lg transition-colors {{ request()->routeIs('admin.about.*') ? 'bg-gold-50 text-gold-600 border-l-4 border-gold-600' : 'text-gray-700 hover:bg-gray-50' }}">
+                    <svg class="w-5 h-5 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                    </svg>
+                    About Page
                 </a>
                 
                 <a href="{{ route('admin.contacts.index') }}" 

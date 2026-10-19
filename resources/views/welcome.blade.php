@@ -20,12 +20,15 @@
                 </div>
             </div>
             <div class="relative" data-aos="fade-left">
-                <img src="https://images.unsplash.com/photo-1503676260728-1c00da094a0b?w=800&q=80" 
+                <img src="https://images.unsplash.com/photo-1503676260728-1c00da094a0b?w=800&q=75&auto=format"
+                     srcset="https://images.unsplash.com/photo-1503676260728-1c00da094a0b?w=480&q=75&auto=format 480w, https://images.unsplash.com/photo-1503676260728-1c00da094a0b?w=800&q=75&auto=format 800w, https://images.unsplash.com/photo-1503676260728-1c00da094a0b?w=1200&q=75&auto=format 1200w"
+                     sizes="(min-width: 1024px) 50vw, 100vw"
                      alt="Children learning" 
                      class="rounded-2xl shadow-2xl w-full"
                      width="800"
                      height="533"
-                     loading="eager">
+                     fetchpriority="high"
+                     decoding="async">
             </div>
         </div>
     </div>

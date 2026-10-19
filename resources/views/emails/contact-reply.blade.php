@@ -222,7 +222,7 @@
 
             <div class="social-links">
                 <a href="https://facebook.com/centrumoptimieduf" target="_blank">Facebook</a> |
-                <a href="https://twitter.com/C_optimieduf" target="_blank">Twitter/X</a> |
+                <a href="https://x.com/C_optimieduf" target="_blank">X</a> |
                 <a href="https://instagram.com/centrumoptimieduf" target="_blank">Instagram</a> |
                 <a href="#">LinkedIn</a>
             </div>

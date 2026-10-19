@@ -31,7 +31,7 @@
                 @if($featured_post->featured_image)
                 <img src="{{ asset('storage/' . $featured_post->featured_image) }}" 
                      alt="{{ $featured_post->title }}" 
-                     class="w-full h-full object-cover">
+                     class="w-full h-full object-cover" fetchpriority="high">
                 @else
                 <div class="w-full h-full bg-gradient-to-br from-gold-200 to-gold-400 flex items-center justify-center">
                     <svg class="w-24 h-24 text-gold-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -86,7 +86,7 @@
                     @if($post->featured_image)
                     <img src="{{ asset('storage/' . $post->featured_image) }}" 
                          alt="{{ $post->title }}" 
-                         class="w-full h-full object-cover">
+                         class="w-full h-full object-cover" loading="lazy" decoding="async">
                     @else
                     <div class="w-full h-full bg-gradient-to-br from-gold-100 to-gold-300 flex items-center justify-center">
                         <svg class="w-16 h-16 text-gold-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">

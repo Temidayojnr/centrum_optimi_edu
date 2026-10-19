@@ -20,6 +20,7 @@ use App\Http\Controllers\Admin\ContactController as AdminContactController;
 use App\Http\Controllers\Admin\GalleryController as AdminGalleryController;
 use App\Http\Controllers\Admin\UserController as AdminUserController;
 use App\Http\Controllers\Admin\LogViewerController;
+use App\Http\Controllers\Admin\AboutController as AdminAboutController;
 
 /*
 |--------------------------------------------------------------------------
@@ -99,6 +100,10 @@ Route::prefix('admin')->name('admin.')->middleware(['admin'])->group(function ()
     
     // Blog Posts
     Route::resource('posts', AdminPostController::class);
+    
+    // About Page
+    Route::get('about', [AdminAboutController::class, 'edit'])->name('about.edit');
+    Route::put('about', [AdminAboutController::class, 'update'])->name('about.update');
     
     // Contacts
     Route::get('contacts', [AdminContactController::class, 'index'])->name('contacts.index');
